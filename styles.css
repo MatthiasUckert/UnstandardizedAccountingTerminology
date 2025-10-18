@@ -265,28 +265,49 @@ section {
   padding-top: 8px;
 }
 
-/* Pagination styling */
+/* Pagination styling - compact and clean */
 .dataTables_wrapper .dataTables_paginate {
-  padding-top: 8px;
+  padding-top: 12px;
+  margin-top: 8px;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
-  padding: 4px 10px;
+  padding: 3px 8px;
   margin: 0 2px;
-  border-radius: 4px;
-  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  border: none;
   font-size: 12px;
+  line-height: 1.4;
+  background-color: transparent;
+  color: #495057;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
   background-color: #e9ecef;
-  border-color: #adb5bd;
+  color: #1e3c72;
+  border: none;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
   background-color: #1e3c72;
   color: white !important;
-  border-color: #1e3c72;
+  border: none;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+  background-color: transparent;
+  color: #adb5bd;
+}
+
+/* Make ellipsis (...) blend better */
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+  padding: 3px 6px;
+  color: #6c757d;
 }
 
 /* Tabset panel styling */

@@ -34,9 +34,13 @@ Each table shows the terms (n-grams) identified, along with their unique term ID
 
 ---
 
+
+**Download all term lists in a formatted Excel file (with separate sheets for each dataset):**
+📥 [Download Term Lists (Excel, 2.6 MB)](downloads/Termlists.xlsx)
+
 ::: {.panel-tabset}
 
-## Top-Down Termlist
+### Top-Down Termlist
 
 **Top-Down Termlist**
 ```{r}
@@ -55,7 +59,7 @@ create_interactive_table(
 )  
 ```
 
-## Bottom-Up (10-K)
+### Bottom-Up (10-K)
 
 **U.S. domestic filers (Form 10-K)**
 ```{r}
@@ -74,7 +78,7 @@ create_interactive_table(
 )
 ```
 
-## Bottom-Up (20-F)
+### Bottom-Up (20-F)
 
 **International filers in the U.S. (Form 20-F)**
 ```{r}
@@ -97,11 +101,7 @@ create_interactive_table(
 
 ---
 
-## Download
 
-**Download all term lists in a formatted Excel file (with separate sheets for each dataset):**
-
-📥 [Download Term Lists (Excel, 2.6 MB)](downloads/Termlists.xlsx)
 
 ---
 
