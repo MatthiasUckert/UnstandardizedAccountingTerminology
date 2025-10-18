@@ -199,12 +199,7 @@ create_interactive_table(
 ```
 :::
 
+
 ------------------------------------------------------------------------
 
-## Technical Notes
-
-**Data cleaning:** All lists undergo extensive standardization including typographic normalization, removal of non-substantive expressions (e.g., "see note", "in thousands"), stopword filtering, and lemmatization. See the online appendix for complete details on regular expressions and cleaning procedures.
-
-**Validation:** Top-down concepts are validated using embedding models (FinBERT and OpenAI) to confirm that within-concept terms exhibit significantly higher semantic similarity than across-concept terms (p < 0.001 across all specifications).
-
-**Citation:** If you use these dictionaries in your research, please cite our paper and link to this supplementary material page.
+# t-SNE Plots
