@@ -34,57 +34,67 @@ Each table shows the terms (n-grams) identified, along with their unique term ID
 
 ---
 
-### 10-K Term List
+::: {.panel-tabset}
 
-U.S. domestic filers (Form 10-K)
+### Top-Down Termlist
+
+**Top-Down Termlist**
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 
-display_parquet_table(
-  .path = "data/Termlists/TermList10K.parquet",
-  .page_length = 25,
-  .bold_cols = "Term",  # Make the Term column bold
-  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
-)
+create_interactive_table(
+  .data = arrow::read_parquet("data/Termlists/TermListROW.parquet"),
+  .page_length = 10L,
+  .column_align = c("center", "center", "left"),
+  .header_align = "center",
+  .filter = "none",
+  .font_size = 14L,
+  .row_padding = 2L
+) 
 ```
 
----
 
-### 20-F Term List
+### Bottom-Up (10-K)
 
-International filers in the U.S. (Form 20-F)
+**U.S. domestic filers (Form 10-K)**
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 
-display_parquet_table(
-  .path = "data/Termlists/TermList20F.parquet",
-  .page_length = 25,
-  .bold_cols = "Term",  # Make the Term column bold
-  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
+create_interactive_table(
+  .data = arrow::read_parquet("data/Termlists/TermList10K.parquet"),
+  .page_length = 10L,
+  .column_align = c("center", "center", "left"),
+  .header_align = "center",
+  .filter = "none",
+  .font_size = 14L,
+  .row_padding = 2L
 )
 ```
 
----
+### Bottom-Up (20-F)
 
-### Rest of World Term List
-
-Non-U.S. reports from various jurisdictions
+**International filers in the U.S. (Form 20-F)**
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 
-display_parquet_table(
-  .path = "data/Termlists/TermListROW.parquet",
-  .page_length = 25,
-  .bold_cols = "Term",  # Make the Term column bold
-  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
+create_interactive_table(
+  .data = arrow::read_parquet("data/Termlists/TermList20F.parquet"),
+  .page_length = 10L,
+  .column_align = c("center", "center", "left"),
+  .header_align = "center",
+  .filter = "none",
+  .font_size = 14L,
+  .row_padding = 2L
 )
 ```
+
+:::
 
 ---
 

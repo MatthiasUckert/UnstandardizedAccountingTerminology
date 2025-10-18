@@ -203,3 +203,113 @@ a[href$=".pdf"]:hover {
 section {
   margin-bottom: 40px;
 }
+
+/* DataTable Custom Styling */
+.dataTables_wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dataTables_wrapper table {
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dataTables_wrapper thead th {
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #495057;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+  /* Header alignment controlled via JS initComplete */
+}
+
+.dataTables_wrapper tbody td {
+  padding: 6px 12px;
+  vertical-align: middle;
+  background-color: white;
+}
+
+.dataTables_wrapper tbody tr:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Body cell alignment classes */
+.dt-body-left {
+  text-align: left !important;
+}
+
+.dt-body-center {
+  text-align: center !important;
+}
+
+.dt-body-right {
+  text-align: right !important;
+}
+
+/* Filter inputs styling */
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_info {
+  font-size: 12px;
+  color: #495057;
+  padding-top: 8px;
+}
+
+/* Pagination styling */
+.dataTables_wrapper .dataTables_paginate {
+  padding-top: 8px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 4px 10px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  font-size: 12px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #1e3c72;
+  color: white !important;
+  border-color: #1e3c72;
+}
+
+/* Tabset panel styling */
+.panel-tabset .nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 1.5rem;
+}
+
+.panel-tabset .nav-link {
+  color: #495057;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.panel-tabset .nav-link:hover {
+  color: #1e3c72;
+  border-bottom-color: #1e3c72;
+}
+
+.panel-tabset .nav-link.active {
+  color: #1e3c72;
+  background-color: transparent;
+  border-bottom-color: #1e3c72;
+}
