@@ -1,0 +1,57 @@
+---
+title: "Additional Tables and Analyses"
+---
+
+This page contains additional tables and statistical analyses that complement the main results in the paper.
+
+---
+
+## Table A1: [Your Table Title]
+
+*Description of what this table shows*
+```{r}
+#| echo: false
+#| warning: false
+
+# Your R code to generate the table
+# Example:
+# library(DT)
+# datatable(your_data, 
+#           filter = 'top',
+#           options = list(pageLength = 25, autoWidth = TRUE))
+```
+
+---
+
+## Table A2: [Your Table Title]
+
+*Description of what this table shows*
+```{r}
+#| echo: false
+#| warning: false
+
+# Your R code here
+```
+
+---
+
+## Figure A1: [Your Figure Title]
+
+*Description of what this figure shows*
+```{r}
+#| echo: false
+#| warning: false
+#| fig-cap: "Your figure caption"
+
+# Your R code to generate the plot
+# Example with plotly for interactivity:
+# library(plotly)
+# p <- ggplot(your_data, aes(x, y)) + geom_point()
+# ggplotly(p)
+```
+
+---
+
+## Notes
+
+Add any relevant notes about the analyses presented on this page.

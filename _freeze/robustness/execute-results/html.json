@@ -1,0 +1,15 @@
+{
+  "hash": "43a3d114b1e69d831946347e6d2ff2fd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Robustness Checks\"\n---\n\nThis page presents robustness checks and alternative specifications for our main results.\n\n---\n\n## Robustness Check 1: [Title]\n\n**Description:** Brief description of this robustness check and what it tests.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Robustness Check 2: [Title]\n\n**Description:** Brief description of this robustness check.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Alternative Specification: [Title]\n\n**Description:** Description of the alternative specification.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Summary\n\nBrief summary of what the robustness checks collectively show and how they support the main findings.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

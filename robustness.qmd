@@ -1,0 +1,60 @@
+---
+title: "Robustness Checks"
+---
+
+This page presents robustness checks and alternative specifications for our main results.
+
+---
+
+## Robustness Check 1: [Title]
+
+**Description:** Brief description of this robustness check and what it tests.
+```{r}
+#| echo: false
+#| warning: false
+
+# Your regression code here
+# Example using modelsummary:
+# library(modelsummary)
+# models <- list(
+#   "Model 1" = lm(y ~ x1 + x2, data = your_data),
+#   "Model 2" = lm(y ~ x1 + x2 + x3, data = your_data)
+# )
+# modelsummary(models, stars = TRUE)
+```
+
+**Interpretation:** What do these results tell us?
+
+---
+
+## Robustness Check 2: [Title]
+
+**Description:** Brief description of this robustness check.
+```{r}
+#| echo: false
+#| warning: false
+
+# Your regression code here
+```
+
+**Interpretation:** What do these results tell us?
+
+---
+
+## Alternative Specification: [Title]
+
+**Description:** Description of the alternative specification.
+```{r}
+#| echo: false
+#| warning: false
+
+# Your code here
+```
+
+**Interpretation:** What do these results tell us?
+
+---
+
+## Summary
+
+Brief summary of what the robustness checks collectively show and how they support the main findings.

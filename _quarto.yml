@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Unstandardized Accounting Terminology"
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Additional Tables"
+        href: additional-tables.qmd
+      - text: "Robustness Checks"
+        href: robustness.qmd
+      - text: "Data & Code"
+        href: data.qmd
+    right:
+      - icon: github
+        href: https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology
+        
+  page-footer:
+    center: "© 2025 | Supplementary materials for JAE submission"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

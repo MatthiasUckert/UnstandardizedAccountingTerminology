@@ -1,0 +1,79 @@
+---
+title: "Unstandardized Accounting Terminology"
+subtitle: "Supplementary Materials"
+---
+
+## Abstract
+
+The communication of accounting information requires a domain-specific vocabulary, and in specialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is unstandardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and increases human and computerized information processing costs, i.e., has economic consequences.
+
+---
+
+## Paper Information
+
+**Authors:** [Names will be added post-review]
+
+**Journal:** Journal of Accounting and Economics (JAE)
+
+**Status:** Under Review
+
+**Version:** October 2025
+
+---
+
+## About This Site
+
+This website provides supplementary materials for our paper, including:
+
+- Additional tables and statistics not included in the paper
+- Robustness checks and alternative specifications
+- Data downloads and replication materials
+- Extended methodological explanations
+
+Navigate using the menu above to explore different sections.
+
+---
+
+## Citation
+
+*Citation information will be added upon publication*
+
+---
+
+## Acknowledgments
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+
+# More Infos
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.
+We thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.
+
+We gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School.

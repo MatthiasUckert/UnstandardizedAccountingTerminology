@@ -1,0 +1,15 @@
+{
+  "hash": "4d0c9776703b9e5183285f2cb70e7619",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Additional Tables and Analyses\"\n---\n\nThis page contains additional tables and statistical analyses that complement the main results in the paper.\n\n---\n\n## Table A1: [Your Table Title]\n\n*Description of what this table shows*\n\n::: {.cell}\n\n:::\n\n\n---\n\n## Table A2: [Your Table Title]\n\n*Description of what this table shows*\n\n::: {.cell}\n\n:::\n\n\n---\n\n## Figure A1: [Your Figure Title]\n\n*Description of what this figure shows*\n\n::: {.cell}\n\n:::\n\n\n---\n\n## Notes\n\nAdd any relevant notes about the analyses presented on this page.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
