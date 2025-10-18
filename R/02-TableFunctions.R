@@ -62,19 +62,17 @@ create_interactive_table <- function(.data,
       )
     ),
     columnDefs = col_defs,
-    initComplete = DT::JS(
-      sprintf(
-        "function(settings, json) {",
-        "$(this.api().table().header()).css({",
-        "'background-color': '#f8f9fa',",
-        "'border-bottom': '2px solid #dee2e6',",
-        "'font-weight': '600',",
-        "'text-align': '%s'",
-        "});",
-        "}",
-        .header_align
-      )
-    )
+    initComplete = DT::JS(sprintf(
+      "function(settings, json) {
+        $(this.api().table().header()).css({
+          'background-color': '#f8f9fa',
+          'border-bottom': '2px solid #dee2e6',
+          'font-weight': '600',
+          'text-align': '%s'
+        });
+      }",
+      .header_align
+    ))
   )
   
   # Create the datatable - no buttons, clean white background
@@ -102,16 +100,4 @@ create_interactive_table <- function(.data,
   }
   
   return(dt)
-}
-
-
-#' Read and display a parquet file as an interactive table
-#'
-#' @param .path Path to the parquet file
-#' @param ... Additional arguments passed to create_interactive_table()
-#'
-#' @return A DT datatable object
-display_parquet_table <- function(.path, ...) {
-  .data <- arrow::read_parquet(.path)
-  create_interactive_table(.data, ...)
 }

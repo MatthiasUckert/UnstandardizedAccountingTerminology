@@ -36,7 +36,7 @@ Each table shows the terms (n-grams) identified, along with their unique term ID
 
 ::: {.panel-tabset}
 
-### Top-Down Termlist
+## Top-Down Termlist
 
 **Top-Down Termlist**
 ```{r}
@@ -52,11 +52,10 @@ create_interactive_table(
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
-) 
+)  
 ```
 
-
-### Bottom-Up (10-K)
+## Bottom-Up (10-K)
 
 **U.S. domestic filers (Form 10-K)**
 ```{r}
@@ -75,7 +74,7 @@ create_interactive_table(
 )
 ```
 
-### Bottom-Up (20-F)
+## Bottom-Up (20-F)
 
 **International filers in the U.S. (Form 20-F)**
 ```{r}
@@ -111,5 +110,3 @@ create_interactive_table(
 - **TID**: Term ID - unique identifier for each term
 - **nGram**: Length of the term (number of words)
 - **Term**: The actual accounting term or phrase
-
-Use the search boxes at the top of each table to filter by specific terms or characteristics. Click column headers to sort.
