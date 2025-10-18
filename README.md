@@ -1,167 +1,132 @@
-# Unstandardized Accounting Terminology - Supplementary Materials
+# Unstandardized Accounting Terminology
 
-This repository contains the supplementary website for the paper "Unstandardized Accounting Terminology" submitted to the Journal of Accounting and Economics (JAE).
+**Supplementary Materials Website**
+
+[![Website](https://img.shields.io/badge/Website-Live-blue)](https://matthiasuckert.github.io/UnstandardizedAccountingTerminology/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains the supplementary website for the paper "Unstandardized Accounting Terminology" (under revision at the *Journal of Accounting and Economics*).
+
+## Authors
+
+- **Holger Daske** - University of Mannheim
+- **Carol Seregni** - The Wharton School, University of Pennsylvania
+- **Matthias Uckert** - University of Amsterdam
+
+## Abstract
+
+The communication of accounting information requires a domain-specific vocabulary, and in specialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is unstandardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and increases human and computerized information processing costs, i.e., has economic consequences.
+
+## Website Contents
+
+Visit the live website at: **[matthiasuckert.github.io/UnstandardizedAccountingTerminology](https://matthiasuckert.github.io/UnstandardizedAccountingTerminology/)**
+
+The website provides:
+
+### 📚 **Dictionaries**
+- **Term Lists**: Complete sets of unique accounting terms found in financial reports
+  - Top-Down (from standards: IFRS, US GAAP, UK GAAP)
+  - Bottom-Up from 10-K filings (~50,000 U.S. filings)
+  - Bottom-Up from 20-F filings (IFRS taxonomy)
+  
+- **Concept Lists**: Granular mappings showing which terms are used as synonyms for the same accounting concepts
+  
+- **Interactive t-SNE Visualizations**: Explore semantic structure of accounting concepts through interactive embeddings
+
+### 🔍 **Robustness Checks**
+Comprehensive robustness analyses and validation tests
+
+### 📥 **Data & Code**
+- Downloadable dictionaries (Excel format)
+- Replication materials
+- Documentation
+
+## Features
+
+✨ **Interactive Widgets**: Filter and explore t-SNE visualizations by dictionary type, embedding model, and concept ID
+
+📊 **Searchable Tables**: All term and concept lists are presented in interactive, searchable tables
+
+📱 **Responsive Design**: Fully functional on desktop, tablet, and mobile devices
 
 ## Repository Structure
+
 ```
 .
-├── _quarto.yml              # Main Quarto configuration
+├── _quarto.yml              # Quarto configuration
 ├── index.qmd                # Home page with abstract
-├── additional-tables.qmd    # Additional analyses
+├── Dictionaries.qmd         # Dictionary tables and visualizations
 ├── robustness.qmd           # Robustness checks
 ├── data.qmd                 # Data and code downloads
-├── styles.css               # Custom CSS styling
-├── data/                    # Data files (create this folder)
-│   └── *.csv               # Your CSV files
-├── scripts/                 # R scripts (create this folder)
-│   └── *.R                 # Your R scripts
+├── styles.css               # Custom styling
+├── R/                       # R functions
+│   ├── 02-TableFunctions.R
+│   └── 04-CreateTsneWidget.R
+├── data/                    # Data files
+│   ├── Termlists/
+│   ├── Conceptlists/
+│   └── tsne_plots_metadata.parquet
+├── images/                  # t-SNE plots
+│   └── tsne/
+├── downloads/               # Downloadable files
 └── docs/                    # Rendered website (auto-generated)
 ```
 
-## Setup Instructions
+## For Developers
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/YourUsername/UnstandardizedAccountingTerminology.git
-cd UnstandardizedAccountingTerminology
-```
+### Prerequisites
 
-### 2. Install Quarto
+- [Quarto](https://quarto.org/docs/get-started/) (v1.3+)
+- R (v4.0+) with packages:
+  - `arrow`
+  - `dplyr`
+  - `DT`
+  - `htmltools`
+  - `jsonlite`
 
-If you haven't already, install Quarto from [quarto.org](https://quarto.org/docs/get-started/)
+### Local Development
 
-### 3. Create Necessary Folders
-```bash
-mkdir data
-mkdir scripts
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology.git
+   cd UnstandardizedAccountingTerminology
+   ```
 
-### 4. Add Your Content
+2. **Preview locally**
+   ```bash
+   quarto preview
+   ```
+   This opens a live preview at `http://localhost:4200` that updates as you edit.
 
-- Add your data files to the `/data` folder
-- Add your R scripts to the `/scripts` folder
-- Edit the `.qmd` files to add your analyses
+3. **Render the website**
+   ```bash
+   quarto render
+   ```
+   This generates the static site in the `docs/` folder.
 
-### 5. Preview Locally
-```bash
-quarto preview
-```
+4. **Publish to GitHub Pages**
+   ```bash
+   git add .
+   git commit -m "Update website"
+   git push
+   ```
+   
+   The site will automatically deploy to GitHub Pages (configured to serve from `main` branch, `/docs` folder).
 
-This will open a browser with a live preview that updates as you edit files.
+### Key Configuration
 
-### 6. Render the Website
-```bash
-quarto render
-```
+- **Theme**: Cosmo (can be changed in `_quarto.yml`)
+- **Output**: `docs/` folder (for GitHub Pages compatibility)
+- **Resources**: The `images/` folder is included as a resource to ensure plots are accessible
 
-This creates the static site in the `/docs` folder.
+## License
 
-### 7. Publish to GitHub Pages
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-First time setup:
-1. Go to your GitHub repository settings
-2. Navigate to Pages
-3. Set Source to "Deploy from a branch"
-4. Choose `main` branch and `/docs` folder
-5. Save
+## Status
 
-Then, to publish:
-```bash
-git add .
-git commit -m "Update website"
-git push
-```
-
-Your site will be live at: `https://yourusername.github.io/UnstandardizedAccountingTerminology/`
-
-## Editing Content
-
-- **Home page:** Edit `index.qmd`
-- **Add tables:** Edit `additional-tables.qmd` and add your R code chunks
-- **Add robustness:** Edit `robustness.qmd`
-- **Update downloads:** Edit `data.qmd` and add files to `/data` folder
-- **Change theme:** Edit the `theme:` line in `_quarto.yml`
-
-## Available Themes
-
-You can easily change the theme in `_quarto.yml`. Options include:
-- `cosmo` (current - modern, clean)
-- `flatly` (minimal, professional)  
-- `sandstone` (warm, friendly)
-- `yeti` (clean, spacious)
-- `lumen` (bright, modern)
-
-See all themes: [Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html)
-
-## Tips
-
-- Code is hidden by default but users can expand it (using `code-fold: true`)
-- The table of contents appears on the right side of each page
-- All pages are responsive and work on mobile
-- External links open in new tabs automatically
-
-## Questions?
-
-For questions about Quarto, see the [Quarto documentation](https://quarto.org/docs/guide/).
-```
+**Current Status**: Under revision (Second Round) at the *Journal of Accounting and Economics*
 
 ---
 
-## **8. .gitignore (Updated)**
-
-Replace your existing `.gitignore` with this updated version:
-```
-# History files
-.Rhistory
-.Rapp.history
-
-# Session Data files
-.RData
-.RDataTmp
-
-# User-specific files
-.Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
-.Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
-
-# Quarto specific
-/.quarto/
-/_site/
-_freeze/
+*This website was built with [Quarto](https://quarto.org/)*
