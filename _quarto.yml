@@ -34,11 +34,11 @@ format:
     code-summary: "Show code"
     smooth-scroll: true
     link-external-newwindow: true
+    grid:
+      sidebar-width: 380px
     include-after-body:
       - text: |
           <script src="js/resizable-toc.js"></script>
-    grid:
-      margin-width: 480px   # try 320–420px to tast
 
 execute:
-  freeze: auto 
+  freeze: auto

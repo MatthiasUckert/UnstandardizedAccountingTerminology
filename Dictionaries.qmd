@@ -19,21 +19,15 @@ source("R/02-TableFunctions.R")
 
 ------------------------------------------------------------------------
 
-## Term Lists
+# Term Lists
 
 To build a comprehensive thesaurus of accounting terminology, we construct two alternative accounting term and concept lists following **top-down** and **bottom-up** approaches.
 
-### Construction Methodology
+## Methodology
 
 **Top-Down Approach:** We collect accounting terms from multiple authoritative sources—IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms explicitly classified as synonyms are grouped by their underlying accounting concepts. The lists are refined using a GPT-based procedure and manually validated to ensure they reflect terminology actually used in practice across our global corpus.
 
 **Bottom-Up Approach:** We leverage XBRL filings from EDGAR, extracting the different terms firms use to describe the same line item by mapping them to underlying accounting concepts via taxonomy tags. To reduce noise, we impose a frequency threshold (terms must appear in at least 20 distinct filings) and apply a majority disambiguation rule (removing terms appearing in less than 5% of filings for a given concept). This approach ensures we capture variation in real-world reporting practice.
-
-### Key Differences
-
-The bottom-up lists contain more terms and include higher n-gram terms (3+ words), reflecting the technical nature of XBRL taxonomies. On average, bottom-up concepts have more synonyms per concept (12.0 vs 5.4 for top-down), higher textual similarity (0.86 vs 0.78), and lower concentration (0.54 vs 0.58). This variation captures not only true synonyms but also different writing conventions used in practice.
-
-------------------------------------------------------------------------
 
 **Download all term lists in a formatted Excel file (with separate sheets for each dataset):**\
 📥 [Download Term Lists (Excel, 2.6 MB)](downloads/Termlists.xlsx)
@@ -130,9 +124,3 @@ create_interactive_table(
 :::
 
 ------------------------------------------------------------------------
-
-## Notes
-
-**Column Definitions:** - **TID**: Term ID - unique identifier for each term - **nGram**: Length of the term (number of words) - **Term**: The actual accounting term or phrase
-
-**Usage:** Use the column filters to search for specific terms. Click column headers to sort. The tables show a sample of entries; download the Excel file above for the complete dataset.
