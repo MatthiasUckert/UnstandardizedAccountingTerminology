@@ -1,0 +1,75 @@
+/* ========================================
+   GENERAL LAYOUT & STYLING
+   ======================================== */
+
+/* Body and main content */
+body {
+  padding-top: 0;
+}
+
+#quarto-content {
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+/* Page title styling */
+h1.title {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Improve readability with better line spacing */
+p {
+  line-height: 1.7;
+}
+
+/* Abstract section styling */
+.abstract {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-left: 4px solid #007bff;
+  margin: 20px 0;
+}
+
+/* Better table styling (general tables, not DataTables) */
+table {
+  margin: 20px 0;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Code block styling */
+pre {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Download link styling */
+a[href$=".csv"], 
+a[href$=".xlsx"], 
+a[href$=".R"], 
+a[href$=".pdf"] {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background-color: #e9ecef;
+}
+
+a[href$=".csv"]:hover, 
+a[href$=".xlsx"]:hover, 
+a[href$=".R"]:hover, 
+a[href$=".pdf"]:hover {
+  background-color: #dee2e6;
+}
+
+/* Better spacing for sections */
+section {
+  margin-bottom: 40px;
+}
+

@@ -1,19 +1,18 @@
 ---
 title: "Additional Tables and Analyses"
-page-layout: article
 ---
 
 This page contains additional tables and statistical analyses that complement the main results in the paper.
 
 ```{r}
-#| echo: false
+#| echo: false 
 #| warning: false
 #| message: false
 
 # Load required packages
 library(DT)
 library(arrow)
-
+ 
 # Source the table functions
 source("R/02-TableFunctions.R")
 ```
