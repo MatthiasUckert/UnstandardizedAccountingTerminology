@@ -1,5 +1,6 @@
 ---
 title: "Additional Tables and Analyses"
+page-layout: article
 ---
 
 This page contains additional tables and statistical analyses that complement the main results in the paper.

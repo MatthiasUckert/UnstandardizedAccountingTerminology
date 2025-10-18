@@ -33,6 +33,7 @@ format:
     code-summary: "Show code"
     smooth-scroll: true
     link-external-newwindow: true
+    max-width: 1600px  # Add this line - default is ~900px
 
 execute:
   freeze: auto

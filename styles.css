@@ -334,3 +334,14 @@ section {
   background-color: transparent;
   border-bottom-color: #1e3c72;
 }
+
+/* Wider content area */
+.quarto-container {
+  max-width: 1400px !important;
+}
+
+/* Or specifically for the main content */
+main.content {
+  max-width: 1200px !important;
+  margin: 0 auto;
+}
