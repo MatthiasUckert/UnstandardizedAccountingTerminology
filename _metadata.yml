@@ -1,5 +1,5 @@
 # Default settings for all .qmd files
-page-layout: article
+page-layout: full
 toc: true
 toc-depth: 3
 toc-location: left

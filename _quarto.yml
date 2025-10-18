@@ -35,7 +35,7 @@ format:
     smooth-scroll: true
     link-external-newwindow: true
     grid:
-      sidebar-width: 380px
+      sidebar-width: 320px
     include-after-body:
       - text: |
           <script src="js/resizable-toc.js"></script>
