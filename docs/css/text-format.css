@@ -1,0 +1,12 @@
+/* Justify main content text */
+#quarto-document-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Keep headers left-aligned */
+#quarto-document-content h1,
+#quarto-document-content h2,
+#quarto-document-content h3 {
+  text-align: left;
+}

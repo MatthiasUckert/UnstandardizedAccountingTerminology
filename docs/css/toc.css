@@ -1,0 +1,117 @@
+/* ========================================
+   TABLE OF CONTENTS (TOC) STYLING
+   ======================================== */
+
+/* Target Quarto's margin sidebar for TOC */
+#quarto-margin-sidebar {
+  position: sticky !important;
+  top: 5rem !important;
+  max-height: calc(100vh - 6rem) !important;
+  overflow-y: auto !important;
+  align-self: flex-start !important;
+  /* CRITICAL: Allow absolute positioning of resize handle */
+  position: relative !important;
+}
+
+/* TOC container */
+#TOC {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #e0e4e8;
+}
+
+/* TOC title "On this page" */
+.sidebar-title,
+#TOC > :first-child {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #1e3c72;
+}
+
+/* TOC links */
+#TOC ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#TOC li {
+  margin: 0.3rem 0;
+}
+
+#TOC a {
+  color: #495057;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  border-left: 3px solid transparent;
+}
+
+#TOC a:hover {
+  background-color: rgba(30, 60, 114, 0.1);
+  color: #1e3c72;
+  border-left-color: #1e3c72;
+  transform: translateX(3px);
+}
+
+#TOC a.active {
+  background-color: rgba(30, 60, 114, 0.15);
+  color: #1e3c72;
+  font-weight: 600;
+  border-left-color: #1e3c72;
+}
+
+/* Nested TOC items */
+#TOC ul ul {
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+#TOC ul ul a {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.75rem;
+}
+
+/* ========================================
+   RESIZABLE TOC HANDLE
+   ======================================== */
+
+/* Resize handle - FIXED positioning with explicit height */
+.toc-resize-handle {
+  position: fixed !important;
+  right: auto !important;
+  width: 25px;
+  height: 100vh;
+  top: 0;
+  cursor: ew-resize;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Position will be calculated by JS based on TOC position */
+}
+
+.toc-resize-handle:hover .resize-line,
+.toc-resize-handle:active .resize-line {
+  background-color: #1e3c72;
+  width: 4px;
+}
+
+/* Visual line indicator */
+.resize-line {
+  width: 2px;
+  height: 100%;
+  background-color: #dee2e6;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  pointer-events: none;
+}

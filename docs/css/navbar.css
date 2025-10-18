@@ -1,0 +1,49 @@
+/* ========================================
+  NAVBAR STYLING
+======================================== */
+  
+  /* Modern gradient navbar - STICKY */
+  .navbar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+    margin-bottom: 0;
+  }
+
+/* Make navbar links look like buttons */
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem !important;
+    margin: 0 0.3rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Navbar brand styling */
+  .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+/* GitHub icon button */
+  .navbar-nav .nav-link i {
+    font-size: 1.2rem;
+  }

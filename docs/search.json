@@ -1,0 +1,261 @@
+[
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data & Code",
+    "section": "",
+    "text": "This page provides access to the data and replication materials for our study."
+  },
+  {
+    "objectID": "data.html#data-files",
+    "href": "data.html#data-files",
+    "title": "Data & Code",
+    "section": "Data Files",
+    "text": "Data Files\n\nMain Dataset\nDescription: Brief description of the main dataset.\n\nFile: main_data.csv\nSize: [X MB / X,XXX rows]\nFormat: CSV\nVariables: Brief description of key variables\n\n\n\nSupplementary Data\nDescription: Additional data files used in robustness checks.\n\nFile: supplementary_data.csv\nSize: [X MB]\nFormat: CSV"
+  },
+  {
+    "objectID": "data.html#replication-code",
+    "href": "data.html#replication-code",
+    "title": "Data & Code",
+    "section": "Replication Code",
+    "text": "Replication Code\n\nR Scripts\nAll analyses were conducted in R (version X.X.X). The following scripts replicate our main results:\n\n01_data_preparation.R - Data cleaning and preparation\n02_main_analysis.R - Main regression analyses\n03_robustness.R - Robustness checks\n04_figures.R - Creates all figures in the paper\n\n\n\nRequired Packages\n# Install required packages\ninstall.packages(c(\"tidyverse\", \"fixest\", \"modelsummary\", \n                   \"DT\", \"plotly\", \"stargazer\"))"
+  },
+  {
+    "objectID": "data.html#data-dictionary",
+    "href": "data.html#data-dictionary",
+    "title": "Data & Code",
+    "section": "Data Dictionary",
+    "text": "Data Dictionary\n\nMain Variables\n\n\n\nVariable Name\nDescription\nType\nValues\n\n\n\n\nvar1\nDescription of variable 1\nNumeric\nRange: X-Y\n\n\nvar2\nDescription of variable 2\nFactor\nLevels: A, B, C\n\n\nvar3\nDescription of variable 3\nCharacter\nFree text\n\n\n\n[Add more rows as needed]"
+  },
+  {
+    "objectID": "data.html#usage-notes",
+    "href": "data.html#usage-notes",
+    "title": "Data & Code",
+    "section": "Usage Notes",
+    "text": "Usage Notes\n\nData Access\nThe data used in this study is [publicly available / subject to data agreements]. [Add any relevant restrictions or requirements for data access.]\n\n\nReproducibility\nTo fully replicate our results:\n\nDownload all data files to a /data subdirectory\nDownload all R scripts to a /scripts subdirectory\n\nUpdate file paths in the scripts to match your directory structure\nRun scripts in numerical order\n\n\n\nSystem Requirements\n\nR version 4.0 or higher\nAt least 8GB RAM recommended for processing large datasets\nEstimated runtime: [X hours/minutes]"
+  },
+  {
+    "objectID": "data.html#questions",
+    "href": "data.html#questions",
+    "title": "Data & Code",
+    "section": "Questions?",
+    "text": "Questions?\nFor questions about the data or replication materials, please [contact information will be added post-review]."
+  },
+  {
+    "objectID": "additional-tables.html",
+    "href": "additional-tables.html",
+    "title": "Additional Tables and Analyses",
+    "section": "",
+    "text": "This page contains additional tables and statistical analyses that complement the main results in the paper."
+  },
+  {
+    "objectID": "additional-tables.html#table-a1-your-table-title",
+    "href": "additional-tables.html#table-a1-your-table-title",
+    "title": "Additional Tables and Analyses",
+    "section": "Table A1: [Your Table Title]",
+    "text": "Table A1: [Your Table Title]\nDescription of what this table shows"
+  },
+  {
+    "objectID": "additional-tables.html#table-a2-your-table-title",
+    "href": "additional-tables.html#table-a2-your-table-title",
+    "title": "Additional Tables and Analyses",
+    "section": "Table A2: [Your Table Title]",
+    "text": "Table A2: [Your Table Title]\nDescription of what this table shows"
+  },
+  {
+    "objectID": "additional-tables.html#figure-a1-your-figure-title",
+    "href": "additional-tables.html#figure-a1-your-figure-title",
+    "title": "Additional Tables and Analyses",
+    "section": "Figure A1: [Your Figure Title]",
+    "text": "Figure A1: [Your Figure Title]\nDescription of what this figure shows"
+  },
+  {
+    "objectID": "additional-tables.html#notes",
+    "href": "additional-tables.html#notes",
+    "title": "Additional Tables and Analyses",
+    "section": "Notes",
+    "text": "Notes\nColumn Definitions: - TID: Term ID - unique identifier for each term - nGram: Length of the term (number of words) - Term: The actual accounting term or phrase\nUsage: Use the column filters to search for specific terms. Click column headers to sort. The tables show a sample of entries; download the Excel file above for the complete dataset."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "",
+    "text": "The communication of accounting information requires a domain-specific vocabulary, and in specialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is unstandardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and increases human and computerized information processing costs, i.e., has economic consequences."
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "",
+    "text": "The communication of accounting information requires a domain-specific vocabulary, and in specialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is unstandardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and increases human and computerized information processing costs, i.e., has economic consequences."
+  },
+  {
+    "objectID": "index.html#paper-information",
+    "href": "index.html#paper-information",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "Paper Information",
+    "text": "Paper Information\nAuthors: [Names will be added post-review]\nJournal: Journal of Accounting and Economics (JAE)\nStatus: Under Review\nVersion: October 2025"
+  },
+  {
+    "objectID": "index.html#about-this-site",
+    "href": "index.html#about-this-site",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "About This Site",
+    "text": "About This Site\nThis website provides supplementary materials for our paper, including:\n\nAdditional tables and statistics not included in the paper\nRobustness checks and alternative specifications\nData downloads and replication materials\nExtended methodological explanations\n\nNavigate using the menu above to explore different sections."
+  },
+  {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "Citation",
+    "text": "Citation\nCitation information will be added upon publication"
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Unstandardized Accounting Terminology",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nWe thank Joachim Gassen, Christian Leuz, Bradford Levy, Volkan Muslu (discussant), Beatriz Garcia Osma, Cathy Schrand, Emily Shafron (discussant), Steven Young, Rodrigo Verdi, Joe Weber, Eric Weisbrod, Christina Zhu, and workshop participants at Free University of Bozen-Bolzano, Harvard Business School, IESE Business School, the Junior Accounting Faculty Conference at Columbia Business School, MIT, the Yale Accounting Conference, and the University of Amsterdam (UvA) for helpful comments and suggestions.\nWe gratefully acknowledge the financial support from the German Research Foundation Project-ID 403041268 – TRR 266 Accounting for Transparency, the Graduate School of Economic and Social Sciences of the University of Mannheim, and the Wharton School."
+  },
+  {
+    "objectID": "robustness.html",
+    "href": "robustness.html",
+    "title": "Robustness Checks",
+    "section": "",
+    "text": "This page presents robustness checks and alternative specifications for our main results."
+  },
+  {
+    "objectID": "robustness.html#robustness-check-1-title",
+    "href": "robustness.html#robustness-check-1-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 1: [Title]",
+    "text": "Robustness Check 1: [Title]\nDescription: Brief description of this robustness check and what it tests.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "robustness.html#robustness-check-2-title",
+    "href": "robustness.html#robustness-check-2-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 2: [Title]",
+    "text": "Robustness Check 2: [Title]\nDescription: Brief description of this robustness check.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "robustness.html#alternative-specification-title",
+    "href": "robustness.html#alternative-specification-title",
+    "title": "Robustness Checks",
+    "section": "Alternative Specification: [Title]",
+    "text": "Alternative Specification: [Title]\nDescription: Description of the alternative specification.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "robustness.html#summary",
+    "href": "robustness.html#summary",
+    "title": "Robustness Checks",
+    "section": "Summary",
+    "text": "Summary\nBrief summary of what the robustness checks collectively show and how they support the main findings."
+  },
+  {
+    "objectID": "additional-tables.html#term-lists",
+    "href": "additional-tables.html#term-lists",
+    "title": "Additional Tables and Analyses",
+    "section": "Term Lists",
+    "text": "Term Lists\nTo build a comprehensive thesaurus of accounting terminology, we construct two alternative accounting term and concept lists following top-down and bottom-up approaches.\n\nConstruction Methodology\nTop-Down Approach: We collect accounting terms from multiple authoritative sources—IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms explicitly classified as synonyms are grouped by their underlying accounting concepts. The lists are refined using a GPT-based procedure and manually validated to ensure they reflect terminology actually used in practice across our global corpus.\nBottom-Up Approach: We leverage XBRL filings from EDGAR, extracting the different terms firms use to describe the same line item by mapping them to underlying accounting concepts via taxonomy tags. To reduce noise, we impose a frequency threshold (terms must appear in at least 20 distinct filings) and apply a majority disambiguation rule (removing terms appearing in less than 5% of filings for a given concept). This approach ensures we capture variation in real-world reporting practice.\n\n\nKey Differences\nThe bottom-up lists contain more terms and include higher n-gram terms (3+ words), reflecting the technical nature of XBRL taxonomies. On average, bottom-up concepts have more synonyms per concept (12.0 vs 5.4 for top-down), higher textual similarity (0.86 vs 0.78), and lower concentration (0.54 vs 0.58). This variation captures not only true synonyms but also different writing conventions used in practice.\n\nDownload all term lists in a formatted Excel file (with separate sheets for each dataset):\n📥 Download Term Lists (Excel, 2.6 MB)"
+  },
+  {
+    "objectID": "additional-tables.html#download",
+    "href": "additional-tables.html#download",
+    "title": "Additional Tables and Analyses",
+    "section": "Download",
+    "text": "Download\nDownload all term lists in a formatted Excel file (with separate sheets for each dataset):\n📥 Download Term Lists (Excel, 2.6 MB)\n\nTop-Down TermlistBottom-Up (10-K)Bottom-Up (20-F)\n\n\nTop-Down Termlist\n\n\n\n\n\n\n\n\nU.S. domestic filers (Form 10-K)\n\n\n\n\n\n\n\n\nInternational filers in the U.S. (Form 20-F)"
+  },
+  {
+    "objectID": "additional-tables.html#term-list-data",
+    "href": "additional-tables.html#term-list-data",
+    "title": "Additional Tables and Analyses",
+    "section": "Term List (Data)",
+    "text": "Term List (Data)\n\nTop-Down TermlistBottom-Up (10-K)Bottom-Up (20-F)\n\n\nAuthoritative Sources Approach\nThis list is constructed from IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms are grouped by accounting concepts and refined through GPT-based processing and manual validation. The list is restricted to terminology observed in our global corpus, ensuring it reflects actual reporting practice.\nKey Characteristics:\n\nSource: Authoritative accounting standards and dictionaries\nAverage synonyms per concept: 5.4\nTextual similarity: 0.78\nConcentration: 0.58\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: U.S. Domestic Filers\nThis list is derived from XBRL filings (Form 10-K) on EDGAR. We extract terms firms use to label the same line items, mapping them to accounting concepts via taxonomy tags. Terms must appear in at least 20 distinct filings. This approach captures variation in real-world reporting practice for U.S. domestic filers.\nKey Characteristics:\n\nSource: ~50,000 U.S. 10-K XBRL filings\nAverage synonyms per concept: 12.0\nTextual similarity: 0.86\nConcentration: 0.54\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: International Filers\nThis list follows the same methodology as the 10-K bottom-up approach but focuses on non-U.S. firms cross-listed in the United States that file Form 20-F using the IFRS Taxonomy. This allows us to capture terminology variation in international reporting practice.\nKey Characteristics:\n\nSource: 20-F XBRL filings (international filers using IFRS)\nMethodology: Same as 10-K bottom-up approach\nFrequency threshold: 20+ filings\nDisambiguation: 5% threshold per concept"
+  },
+  {
+    "objectID": "Dictionaries.html",
+    "href": "Dictionaries.html",
+    "title": "Dictionaries",
+    "section": "",
+    "text": "This page provides comprehensive dictionaries of accounting terminology constructed using both top-down and bottom-up approaches. These dictionaries enable researchers to identify and measure terminological variation in financial reporting practice."
+  },
+  {
+    "objectID": "Dictionaries.html#term-lists",
+    "href": "Dictionaries.html#term-lists",
+    "title": "Additional Tables and Analyses",
+    "section": "Term Lists",
+    "text": "Term Lists\nTo build a comprehensive thesaurus of accounting terminology, we construct two alternative accounting term and concept lists following top-down and bottom-up approaches.\n\nMethodology\nTop-Down Approach: We collect accounting terms from multiple authoritative sources—IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms explicitly classified as synonyms are grouped by their underlying accounting concepts. The lists are refined using a GPT-based procedure and manually validated to ensure they reflect terminology actually used in practice across our global corpus.\nBottom-Up Approach: We leverage XBRL filings from EDGAR, extracting the different terms firms use to describe the same line item by mapping them to underlying accounting concepts via taxonomy tags. To reduce noise, we impose a frequency threshold (terms must appear in at least 20 distinct filings) and apply a majority disambiguation rule (removing terms appearing in less than 5% of filings for a given concept). This approach ensures we capture variation in real-world reporting practice.\nDownload all term lists in a formatted Excel file (with separate sheets for each dataset):\n📥 Download Term Lists (Excel, 2.6 MB)"
+  },
+  {
+    "objectID": "Dictionaries.html#term-list-data",
+    "href": "Dictionaries.html#term-list-data",
+    "title": "Accounting Dictionaries",
+    "section": "Term List (Data)",
+    "text": "Term List (Data)\n\nTop-Down TermlistBottom-Up (10-K)Bottom-Up (20-F)\n\n\nAuthoritative Sources Approach\nThis list is constructed from IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms are grouped by accounting concepts and refined through GPT-based processing and manual validation. The list is restricted to terminology observed in our global corpus, ensuring it reflects actual reporting practice.\nKey Characteristics:\n\nSource: Authoritative accounting standards and dictionaries\nAverage synonyms per concept: 5.4\nTextual similarity: 0.78\nConcentration: 0.58\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: U.S. Domestic Filers\nThis list is derived from XBRL filings (Form 10-K) on EDGAR. We extract terms firms use to label the same line items, mapping them to accounting concepts via taxonomy tags. Terms must appear in at least 20 distinct filings. This approach captures variation in real-world reporting practice for U.S. domestic filers.\nKey Characteristics:\n\nSource: ~50,000 U.S. 10-K XBRL filings\nAverage synonyms per concept: 12.0\nTextual similarity: 0.86\nConcentration: 0.54\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: International Filers\nThis list follows the same methodology as the 10-K bottom-up approach but focuses on non-U.S. firms cross-listed in the United States that file Form 20-F using the IFRS Taxonomy. This allows us to capture terminology variation in international reporting practice.\nKey Characteristics:\n\nSource: 20-F XBRL filings (international filers using IFRS)\nMethodology: Same as 10-K bottom-up approach\nFrequency threshold: 20+ filings\nDisambiguation: 5% threshold per concept"
+  },
+  {
+    "objectID": "Dictionaries.html#notes",
+    "href": "Dictionaries.html#notes",
+    "title": "Additional Tables and Analyses",
+    "section": "Notes",
+    "text": "Notes\nColumn Definitions: - TID: Term ID - unique identifier for each term - nGram: Length of the term (number of words) - Term: The actual accounting term or phrase\nUsage: Use the column filters to search for specific terms. Click column headers to sort. The tables show a sample of entries; download the Excel file above for the complete dataset."
+  },
+  {
+    "objectID": "Dictionaries.html#methodology",
+    "href": "Dictionaries.html#methodology",
+    "title": "Accounting Dictionaries",
+    "section": "Methodology",
+    "text": "Methodology\nTop-Down Approach: We collect accounting terms from multiple authoritative sources—IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries. Terms explicitly classified as synonyms are grouped by their underlying accounting concepts. The lists are refined using a GPT-based procedure and manually validated to ensure they reflect terminology actually used in practice across our global corpus.\nBottom-Up Approach: We leverage XBRL filings from EDGAR, extracting the different terms firms use to describe the same line item by mapping them to underlying accounting concepts via taxonomy tags. To reduce noise, we impose a frequency threshold (terms must appear in at least 20 distinct filings) and apply a majority disambiguation rule (removing terms appearing in less than 5% of filings for a given concept). This approach ensures we capture variation in real-world reporting practice.\nDownload all term lists in a formatted Excel file (with separate sheets for each dataset):\n📥 Download Term Lists (Excel, 2.6 MB)"
+  },
+  {
+    "objectID": "Dictionaries.html#methodology-1",
+    "href": "Dictionaries.html#methodology-1",
+    "title": "Accounting Dictionaries",
+    "section": "Methodology",
+    "text": "Methodology\nTerm-to-Concept Mapping: Each entry in the concept list represents a unique term and its associated accounting concept identifier (CID). The same term may appear multiple times if it maps to different concepts in different contexts. This structure allows researchers to examine how terms are used across different accounting concepts and identify potential ambiguities in financial reporting language.\nFiltering and Validation: The bottom-up concept lists apply the same frequency thresholds and disambiguation rules as the term lists (20+ filings, 5% threshold). The top-down concept list preserves all mappings identified from authoritative sources and validated against our corpus.\nDownload all concept lists in a formatted Excel file (with separate sheets for each dataset):\n📥 Download Concept Lists (Excel)"
+  },
+  {
+    "objectID": "Dictionaries.html#concept-list-data",
+    "href": "Dictionaries.html#concept-list-data",
+    "title": "Accounting Dictionaries",
+    "section": "Concept List (Data)",
+    "text": "Concept List (Data)\n\nTop-Down ConceptlistBottom-Up (10-K)Bottom-Up (20-F)\n\n\nAuthoritative Sources Approach\nThis concept list maps individual terms from accounting standards and dictionaries to their underlying concepts. Each row represents a distinct term-concept pairing, allowing for detailed analysis of how the same term may be used across multiple accounting concepts or how different terms map to the same concept.\nKey Characteristics:\n\nSource: IFRS, US GAAP, UK GAAP standards, and specialized dictionaries\nGranularity: Term-level mapping to concepts\nValidation: GPT-based refinement and manual validation\nCorpus restriction: Only terms observed in practice\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: U.S. Domestic Filers\nThis concept list is derived from U.S. 10-K XBRL filings, showing each term and its associated concept identifier from the taxonomy. The granular structure reveals how U.S. domestic filers use different terms to describe the same accounting concepts, with frequency thresholds ensuring the data reflects widespread reporting practices.\nKey Characteristics:\n\nSource: ~50,000 U.S. 10-K XBRL filings\nGranularity: Term-level mapping to XBRL concepts\nFrequency threshold: 20+ distinct filings\nDisambiguation: 5% threshold applied per concept\n\n\n\n\n\n\n\n\n\nXBRL-Based Approach: International Filers\nThis concept list follows the same methodology as the 10-K approach but focuses on international filers using the IFRS Taxonomy in their Form 20-F filings. The data captures how non-U.S. firms map terminology to accounting concepts, revealing cross-border variation in financial reporting language.\nKey Characteristics:\n\nSource: 20-F XBRL filings (IFRS Taxonomy)\nGranularity: Term-level mapping to IFRS concepts\nFrequency threshold: 20+ distinct filings\nDisambiguation: 5% threshold applied per concept"
+  },
+  {
+    "objectID": "Dictionaries.html#construction-approaches",
+    "href": "Dictionaries.html#construction-approaches",
+    "title": "Dictionaries",
+    "section": "Construction Approaches",
+    "text": "Construction Approaches\nTop-Down (Authoritative Sources): We collect terms from IFRS, US GAAP, and UK GAAP standards, plus specialized accounting dictionaries and the EU’s IATE database. Terms explicitly classified as synonyms are grouped by their underlying concepts. All lists are refined using GPT-based validation and manual checks, then restricted to terminology actually observed in our global corpus of financial reports.\nBottom-Up (XBRL Filings): We extract terms directly from financial statements by parsing XBRL filings on EDGAR. Specifically, we use Exhibit 101.LAB files, which map XBRL taxonomy tags to the natural language labels firms actually use in their reports. This captures real-world variation in reporting practice. To reduce noise, we require that 10-K terms appear in at least 20 distinct filings and 20-F terms in at least 5 distinct filings. We apply a majority disambiguation rule, removing terms that appear in less than 5% of filings for a given concept."
+  },
+  {
+    "objectID": "Dictionaries.html#key-characteristics",
+    "href": "Dictionaries.html#key-characteristics",
+    "title": "Dictionaries",
+    "section": "Key Characteristics",
+    "text": "Key Characteristics\nThe table below summarizes the differences across our dictionaries:\n\n\n\n\n\n\n\n\n\nCharacteristic\nTop-Down\nBottom-Up (10-K)\nBottom-Up (20-F)\n\n\n\n\nSource\nStandards & Dictionaries\n~50,000 U.S. 10-K filings\n20-F filings (IFRS)\n\n\nAvg. synonyms/concept\n5.4\n12.0\n-\n\n\nTextual similarity\n0.78\n0.86\n-\n\n\nConcentration\n0.58\n0.54\n-\n\n\n\nInterpretation: The bottom-up approach captures more variation per concept, including differences in writing conventions and stylistic choices beyond “true” synonyms. The higher textual similarity (0.86 vs 0.78) reflects that XBRL-based terms often share common structure from taxonomy labels, while lower concentration (0.54 vs 0.58) indicates that term usage is more evenly distributed rather than dominated by a few common terms."
+  },
+  {
+    "objectID": "Dictionaries.html#technical-notes",
+    "href": "Dictionaries.html#technical-notes",
+    "title": "Dictionaries",
+    "section": "Technical Notes",
+    "text": "Technical Notes\nData cleaning: All lists undergo extensive standardization including typographic normalization, removal of non-substantive expressions (e.g., “see note”, “in thousands”), stopword filtering, and lemmatization. See the online appendix for complete details on regular expressions and cleaning procedures.\nValidation: Top-down concepts are validated using embedding models (FinBERT and OpenAI) to confirm that within-concept terms exhibit significantly higher semantic similarity than across-concept terms (p &lt; 0.001 across all specifications).\nCitation: If you use these dictionaries in your research, please cite our paper and link to this supplementary material page."
+  },
+  {
+    "objectID": "Dictionaries.html#option-2-use-rs-built-in-tabsets-no-javascript",
+    "href": "Dictionaries.html#option-2-use-rs-built-in-tabsets-no-javascript",
+    "title": "Dictionaries",
+    "section": "Option 2: Use R’s Built-in Tabsets (No JavaScript)",
+    "text": "Option 2: Use R’s Built-in Tabsets (No JavaScript)\nCreate tabs for each combination - simple and bulletproof:\n::: {.panel-tabset}\n\n## FinBert - BottomUp (10-K)\n\n### CID-10K-000001\n\n![CID-10K-000001_BottomUp (10-K)_FinBert](images/tsne/CID-10K-000001_BottomUp10-K_FinBert.png)\n\n\n### CID-10K-000011\n\n![CID-10K-000011_BottomUp (10-K)_FinBert](images/tsne/CID-10K-000011_BottomUp10-K_FinBert.png)\n\n\n### CID-10K-000017\n\n![CID-10K-000017_BottomUp (10-K)_FinBert](images/tsne/CID-10K-000017_BottomUp10-K_FinBert.png)\n\n\n### CID-10K-000068\n\n![CID-10K-000068_BottomUp (10-K)_FinBert](images/tsne/CID-10K-000068_BottomUp10-K_FinBert.png)\n\n\n### CID-10K-005303\n\n![CID-10K-005303_BottomUp (10-K)_FinBert](images/tsne/CID-10K-005303_BottomUp10-K_FinBert.png)\n\n\n### CID-10K-006448\n\n![CID-10K-006448_BottomUp (10-K)_FinBert](images/tsne/CID-10K-006448_BottomUp10-K_FinBert.png)\n\n## OpenAI - BottomUp (10-K)\n\n### CID-10K-000001\n\n![CID-10K-000001_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-000001_BottomUp10-K_OpenAILarge.png)\n\n\n### CID-10K-000011\n\n![CID-10K-000011_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-000011_BottomUp10-K_OpenAILarge.png)\n\n\n### CID-10K-000017\n\n![CID-10K-000017_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-000017_BottomUp10-K_OpenAILarge.png)\n\n\n### CID-10K-000068\n\n![CID-10K-000068_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-000068_BottomUp10-K_OpenAILarge.png)\n\n\n### CID-10K-005303\n\n![CID-10K-005303_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-005303_BottomUp10-K_OpenAILarge.png)\n\n\n### CID-10K-006448\n\n![CID-10K-006448_BottomUp (10-K)_OpenAI (Large)](images/tsne/CID-10K-006448_BottomUp10-K_OpenAILarge.png)\n\n:::"
+  },
+  {
+    "objectID": "Dictionaries.html#my-recommendation",
+    "href": "Dictionaries.html#my-recommendation",
+    "title": "Dictionaries",
+    "section": "My Recommendation",
+    "text": "My Recommendation\nStart with Option 1 (everything inline). It’s the most similar to what you wanted and should work reliably since there’s no external file dependency. The entire HTML and JavaScript is embedded directly in the rendered document.\nWhich approach would you like to try first?"
+  }
+]
