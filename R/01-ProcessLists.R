@@ -4,7 +4,7 @@ source("R/00-Utils.R")
 
 # Transform Term/Concept Lists --------------------------------------------
 ## Termlists ---------------------------------------------------------------
-.dir_termlists <- "data-raw/TermConceptlists/Termlists/"
+.dir_termlists <- "data-raw/Termlists/"
 fils_termlists <- utils_list_files(.dir_termlists) %>%
   dplyr::mutate(
     DocID = gsub("Final", "", DocID),
@@ -38,7 +38,7 @@ if (!file.exists(fil_termlist_excel)) {
 rm(fils_termlists, fil_termlist_excel)
 
 ## Conceptlists ---------------------------------------------------------------
-.dir_conceptlists <- "data-raw/TermConceptlists/Conceptlists/"
+.dir_conceptlists <- "data-raw/Conceptlists/"
 fils_conceptlists <- utils_list_files(.dir_conceptlists) %>%
   dplyr::filter(DocID %in% c(
     "ConceptList10K_Majority005",
