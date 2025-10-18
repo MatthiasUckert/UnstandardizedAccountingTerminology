@@ -1,0 +1,15 @@
+{
+  "hash": "9a6dc470032c7d875bb2cd61ef1f3f88",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Textual Measures\"\n---\n\nPlace Holder ...\nWe could show CBS and other measures over time\n\n---\n\n## Robustness Check 1: [Title]\n\n**Description:** Brief description of this robustness check and what it tests.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Robustness Check 2: [Title]\n\n**Description:** Brief description of this robustness check.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Alternative Specification: [Title]\n\n**Description:** Description of the alternative specification.\n\n::: {.cell}\n\n:::\n\n\n**Interpretation:** What do these results tell us?\n\n---\n\n## Summary\n\nBrief summary of what the robustness checks collectively show and how they support the main findings.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

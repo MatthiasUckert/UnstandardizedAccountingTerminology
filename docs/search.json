@@ -95,7 +95,7 @@
     "href": "index.html#paper-information",
     "title": "Unstandardized Accounting Terminology",
     "section": "Paper Information",
-    "text": "Paper Information\nAuthors: [Names will be added post-review]\nJournal: Journal of Accounting and Economics (JAE)\nStatus: Under Review\nVersion: October 2025"
+    "text": "Paper Information\nAuthors: [Redacted]\nJournal: Journal of Accounting and Economics (JAE)\nStatus: Under Review\nVersion: October 2025"
   },
   {
     "objectID": "index.html#about-this-site",
@@ -257,5 +257,131 @@
     "title": "Dictionaries",
     "section": "My Recommendation",
     "text": "My Recommendation\nStart with Option 1 (everything inline). It’s the most similar to what you wanted and should work reliably since there’s no external file dependency. The entire HTML and JavaScript is embedded directly in the rendered document.\nWhich approach would you like to try first?"
+  },
+  {
+    "objectID": "02-TextualMeasures.html",
+    "href": "02-TextualMeasures.html",
+    "title": "Textual Measures",
+    "section": "",
+    "text": "Place Holder … We could show CBS and other measures over time"
+  },
+  {
+    "objectID": "02-TextualMeasures.html#robustness-check-1-title",
+    "href": "02-TextualMeasures.html#robustness-check-1-title",
+    "title": "Textual Measures",
+    "section": "Robustness Check 1: [Title]",
+    "text": "Robustness Check 1: [Title]\nDescription: Brief description of this robustness check and what it tests.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "02-TextualMeasures.html#robustness-check-2-title",
+    "href": "02-TextualMeasures.html#robustness-check-2-title",
+    "title": "Textual Measures",
+    "section": "Robustness Check 2: [Title]",
+    "text": "Robustness Check 2: [Title]\nDescription: Brief description of this robustness check.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "02-TextualMeasures.html#alternative-specification-title",
+    "href": "02-TextualMeasures.html#alternative-specification-title",
+    "title": "Textual Measures",
+    "section": "Alternative Specification: [Title]",
+    "text": "Alternative Specification: [Title]\nDescription: Description of the alternative specification.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "02-TextualMeasures.html#summary",
+    "href": "02-TextualMeasures.html#summary",
+    "title": "Textual Measures",
+    "section": "Summary",
+    "text": "Summary\nBrief summary of what the robustness checks collectively show and how they support the main findings."
+  },
+  {
+    "objectID": "04-TBD.html",
+    "href": "04-TBD.html",
+    "title": "TBD …",
+    "section": "",
+    "text": "Place Holder … Whatever we want to show"
+  },
+  {
+    "objectID": "04-TBD.html#robustness-check-1-title",
+    "href": "04-TBD.html#robustness-check-1-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 1: [Title]",
+    "text": "Robustness Check 1: [Title]\nDescription: Brief description of this robustness check and what it tests.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "04-TBD.html#robustness-check-2-title",
+    "href": "04-TBD.html#robustness-check-2-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 2: [Title]",
+    "text": "Robustness Check 2: [Title]\nDescription: Brief description of this robustness check.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "04-TBD.html#alternative-specification-title",
+    "href": "04-TBD.html#alternative-specification-title",
+    "title": "Robustness Checks",
+    "section": "Alternative Specification: [Title]",
+    "text": "Alternative Specification: [Title]\nDescription: Description of the alternative specification.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "04-TBD.html#summary",
+    "href": "04-TBD.html#summary",
+    "title": "Robustness Checks",
+    "section": "Summary",
+    "text": "Summary\nBrief summary of what the robustness checks collectively show and how they support the main findings."
+  },
+  {
+    "objectID": "01-Dictionaries.html",
+    "href": "01-Dictionaries.html",
+    "title": "Dictionaries",
+    "section": "",
+    "text": "This page provides comprehensive dictionaries of accounting terminology constructed using both top-down and bottom-up approaches. These dictionaries enable researchers to identify and measure terminological variation in financial reporting practice."
+  },
+  {
+    "objectID": "01-Dictionaries.html#construction-approaches",
+    "href": "01-Dictionaries.html#construction-approaches",
+    "title": "Dictionaries",
+    "section": "Construction Approaches",
+    "text": "Construction Approaches\nTop-Down (Authoritative Sources): We collect terms from IFRS, US GAAP, and UK GAAP standards, plus specialized accounting dictionaries and the EU’s IATE database. Terms explicitly classified as synonyms are grouped by their underlying concepts. All lists are refined using GPT-based validation and manual checks, then restricted to terminology actually observed in our global corpus of financial reports.\nBottom-Up (XBRL Filings): We extract terms directly from financial statements by parsing XBRL filings on EDGAR. Specifically, we use Exhibit 101.LAB files, which map XBRL taxonomy tags to the natural language labels firms actually use in their reports. This captures real-world variation in reporting practice. To reduce noise, we require that 10-K terms appear in at least 20 distinct filings and 20-F terms in at least 5 distinct filings. We apply a majority disambiguation rule, removing terms that appear in less than 5% of filings for a given concept."
+  },
+  {
+    "objectID": "01-Dictionaries.html#key-characteristics",
+    "href": "01-Dictionaries.html#key-characteristics",
+    "title": "Dictionaries",
+    "section": "Key Characteristics",
+    "text": "Key Characteristics\nThe table below summarizes the differences across our dictionaries:\n\n\n\n\n\n\n\n\n\nCharacteristic\nTop-Down\nBottom-Up (10-K)\nBottom-Up (20-F)\n\n\n\n\nSource\nStandards & Dictionaries\n~50,000 U.S. 10-K filings\n20-F filings (IFRS)\n\n\nAvg. synonyms/concept\n5.4\n12.0\n-\n\n\nTextual similarity\n0.78\n0.86\n-\n\n\nConcentration\n0.58\n0.54\n-\n\n\n\nInterpretation: The bottom-up approach captures more variation per concept, including differences in writing conventions and stylistic choices beyond “true” synonyms. The higher textual similarity (0.86 vs 0.78) reflects that XBRL-based terms often share common structure from taxonomy labels, while lower concentration (0.54 vs 0.58) indicates that term usage is more evenly distributed rather than dominated by a few common terms."
+  },
+  {
+    "objectID": "03-RobustnessTests.html",
+    "href": "03-RobustnessTests.html",
+    "title": "Robustness Tests",
+    "section": "",
+    "text": "Place Holder … We could show additional tables (sepcifications)"
+  },
+  {
+    "objectID": "03-RobustnessTests.html#robustness-check-1-title",
+    "href": "03-RobustnessTests.html#robustness-check-1-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 1: [Title]",
+    "text": "Robustness Check 1: [Title]\nDescription: Brief description of this robustness check and what it tests.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "03-RobustnessTests.html#robustness-check-2-title",
+    "href": "03-RobustnessTests.html#robustness-check-2-title",
+    "title": "Robustness Checks",
+    "section": "Robustness Check 2: [Title]",
+    "text": "Robustness Check 2: [Title]\nDescription: Brief description of this robustness check.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "03-RobustnessTests.html#alternative-specification-title",
+    "href": "03-RobustnessTests.html#alternative-specification-title",
+    "title": "Robustness Checks",
+    "section": "Alternative Specification: [Title]",
+    "text": "Alternative Specification: [Title]\nDescription: Description of the alternative specification.\nInterpretation: What do these results tell us?"
+  },
+  {
+    "objectID": "03-RobustnessTests.html#summary",
+    "href": "03-RobustnessTests.html#summary",
+    "title": "Robustness Checks",
+    "section": "Summary",
+    "text": "Summary\nBrief summary of what the robustness checks collectively show and how they support the main findings."
   }
 ]

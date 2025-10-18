@@ -13,11 +13,13 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Dictionaries"
-        href: Dictionaries.qmd
-      - text: "Robustness Checks"
-        href: robustness.qmd
-      - text: "Data & Code"
-        href: data.qmd
+        href: 01-Dictionaries.qmd
+      - text: "Textual Measures"
+        href: 02-TextualMeasures.qmd
+      - text: "Robustness Tests"
+        href: 03-RobustnessTests.qmd
+      - text: "TBD ..."
+        href: 04-TBD.qmd
     right:
       - icon: github
         href: https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology
