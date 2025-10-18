@@ -3,55 +3,103 @@ title: "Additional Tables and Analyses"
 ---
 
 This page contains additional tables and statistical analyses that complement the main results in the paper.
-
----
-
-## Table A1: [Your Table Title]
-
-*Description of what this table shows*
 ```{r}
 #| echo: false
 #| warning: false
+#| message: false
 
-# Your R code to generate the table
-# Example:
-# library(DT)
-# datatable(your_data, 
-#           filter = 'top',
-#           options = list(pageLength = 25, autoWidth = TRUE))
+# Load required packages
+library(DT)
+library(arrow)
+
+# Source the table functions
+source("R/02-TableFunctions.R")
 ```
 
 ---
 
-## Table A2: [Your Table Title]
+## Term Lists
 
-*Description of what this table shows*
+Our analysis examines accounting terminology across different datasets. Below are the complete term lists used in our study.
+
+### Dataset Overview
+
+We analyze three distinct corpora:
+
+- **10-K Reports** (~50,000 U.S. annual reports)
+- **20-F Reports** (International filers in the U.S.)
+- **Rest of World** (Non-U.S. reports from various jurisdictions)
+
+Each table shows the terms (n-grams) identified, along with their unique term IDs and the specific n-gram length.
+
+---
+
+### 10-K Term List
+
+U.S. domestic filers (Form 10-K)
 ```{r}
 #| echo: false
 #| warning: false
+#| message: false
 
-# Your R code here
+display_parquet_table(
+  .path = "data/Termlists/TermList10K.parquet",
+  .page_length = 25,
+  .bold_cols = "Term",  # Make the Term column bold
+  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
+)
 ```
 
 ---
 
-## Figure A1: [Your Figure Title]
+### 20-F Term List
 
-*Description of what this figure shows*
+International filers in the U.S. (Form 20-F)
 ```{r}
 #| echo: false
 #| warning: false
-#| fig-cap: "Your figure caption"
+#| message: false
 
-# Your R code to generate the plot
-# Example with plotly for interactivity:
-# library(plotly)
-# p <- ggplot(your_data, aes(x, y)) + geom_point()
-# ggplotly(p)
+display_parquet_table(
+  .path = "data/Termlists/TermList20F.parquet",
+  .page_length = 25,
+  .bold_cols = "Term",  # Make the Term column bold
+  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
+)
 ```
+
+---
+
+### Rest of World Term List
+
+Non-U.S. reports from various jurisdictions
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+display_parquet_table(
+  .path = "data/Termlists/TermListROW.parquet",
+  .page_length = 25,
+  .bold_cols = "Term",  # Make the Term column bold
+  .right_align_cols = c("TID", "nGram")  # Right-align numeric columns
+)
+```
+
+---
+
+## Download
+
+**Download all term lists in a formatted Excel file (with separate sheets for each dataset):**
+
+📥 [Download Term Lists (Excel, 2.6 MB)](downloads/Termlists.xlsx)
 
 ---
 
 ## Notes
 
-Add any relevant notes about the analyses presented on this page.
+- **TID**: Term ID - unique identifier for each term
+- **nGram**: Length of the term (number of words)
+- **Term**: The actual accounting term or phrase
+
+Use the search boxes at the top of each table to filter by specific terms or characteristics. Click column headers to sort.
