@@ -1,89 +1,86 @@
-// ========================================
-// RESIZABLE TOC
-// Allows users to drag and resize the TOC width
-// ========================================
-
-(function() {
+(function () {
   'use strict';
-  
-  // Wait for DOM to be ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initResizableTOC);
-  } else {
-    initResizableTOC();
+
+  let isDragging = false, startX = 0, startWidth = 0;
+  let container = null, tocNav = null, handle = null;
+
+  function findTOCContainer() {
+    tocNav = document.querySelector("nav[role='doc-toc']") || document.getElementById('TOC');
+    if (!tocNav) return null;
+    // Prefer the margin sidebar if it exists; otherwise resize the nearest column-like parent
+    return document.querySelector('#quarto-margin-sidebar') ||
+           tocNav.closest('aside, .sidebar, #quarto-sidebar, .column-left, .page-left') ||
+           tocNav.parentElement;
   }
-  
-  function initResizableTOC() {
-    const toc = document.querySelector('.sidebar.toc-left, .sidebar-navigation, #quarto-margin-sidebar');
-    
-    if (!toc) return; // No TOC found
-    
-    // Create resize handle
-    const resizeHandle = document.createElement('div');
-    resizeHandle.className = 'toc-resize-handle';
-    resizeHandle.innerHTML = '<div class="resize-line"></div>';
-    toc.appendChild(resizeHandle);
-    
-    let isResizing = false;
-    let startX = 0;
-    let startWidth = 0;
-    
-    // Load saved width from localStorage
-    const savedWidth = localStorage.getItem('toc-width');
-    if (savedWidth) {
-      toc.style.width = savedWidth + 'px';
-      toc.style.minWidth = savedWidth + 'px';
-      toc.style.maxWidth = savedWidth + 'px';
+
+  function positionHandle() {
+    const r = container.getBoundingClientRect();
+    handle.style.left = (r.right - 5) + 'px';
+    handle.style.top = r.top + 'px';
+    handle.style.height = r.height + 'px';
+  }
+
+  function startDrag(e) {
+    isDragging = true;
+    startX = e.clientX;
+    startWidth = container.offsetWidth;
+    e.preventDefault();
+    document.body.style.cursor = 'ew-resize';
+    document.body.style.userSelect = 'none';
+    document.addEventListener('mousemove', onDrag);
+    document.addEventListener('mouseup', stopDrag);
+  }
+
+  function onDrag(e) {
+    if (!isDragging) return;
+    const w = Math.min(600, Math.max(220, startWidth + (e.clientX - startX)));
+    container.style.width = w + 'px';
+    container.style.minWidth = w + 'px';
+    container.style.maxWidth = w + 'px';
+    positionHandle();
+    localStorage.setItem('toc-width', w);
+  }
+
+  function stopDrag() {
+    if (!isDragging) return;
+    isDragging = false;
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+    document.removeEventListener('mousemove', onDrag);
+    document.removeEventListener('mouseup', stopDrag);
+  }
+
+  function init() {
+    container = findTOCContainer();
+    if (!container) { console.log('TOC container not found'); return; }
+
+    handle = document.createElement('div');
+    handle.className = 'toc-resize-handle';
+    handle.innerHTML = '<div class="resize-line"></div>';
+    document.body.appendChild(handle);
+
+    const saved = localStorage.getItem('toc-width');
+    if (saved) {
+      ['width','minWidth','maxWidth'].forEach(p => container.style[p] = saved + 'px');
     }
-    
-    // Mouse down on handle
-    resizeHandle.addEventListener('mousedown', function(e) {
-      isResizing = true;
-      startX = e.clientX;
-      startWidth = parseInt(getComputedStyle(toc).width, 10);
-      
-      document.body.style.cursor = 'ew-resize';
-      document.body.style.userSelect = 'none';
-      
-      e.preventDefault();
-    });
-    
-    // Mouse move
-    document.addEventListener('mousemove', function(e) {
-      if (!isResizing) return;
-      
-      const width = startWidth + (e.clientX - startX);
-      
-      // Set min and max width constraints
-      const minWidth = 200;
-      const maxWidth = 500;
-      
-      if (width >= minWidth && width <= maxWidth) {
-        toc.style.width = width + 'px';
-        toc.style.minWidth = width + 'px';
-        toc.style.maxWidth = width + 'px';
-      }
-    });
-    
-    // Mouse up
-    document.addEventListener('mouseup', function() {
-      if (isResizing) {
-        isResizing = false;
-        document.body.style.cursor = '';
-        document.body.style.userSelect = '';
-        
-        // Save width to localStorage
-        const currentWidth = parseInt(getComputedStyle(toc).width, 10);
-        localStorage.setItem('toc-width', currentWidth);
-      }
-    });
-    
-    // Double-click to reset to default
-    resizeHandle.addEventListener('dblclick', function() {
-      toc.style.width = '';
-      toc.style.minWidth = '';
-      toc.style.maxWidth = '';
+
+    positionHandle();
+    window.addEventListener('scroll', positionHandle);
+    window.addEventListener('resize', positionHandle);
+    const obs = new MutationObserver(positionHandle);
+    obs.observe(container, { childList: true, subtree: true });
+
+    handle.addEventListener('mousedown', startDrag);
+    handle.addEventListener('dblclick', () => {
+      ['width','minWidth','maxWidth'].forEach(p => container.style[p] = '');
       localStorage.removeItem('toc-width');
+      setTimeout(positionHandle, 100);
     });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();

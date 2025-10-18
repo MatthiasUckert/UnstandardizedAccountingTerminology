@@ -2,17 +2,15 @@
    TABLE OF CONTENTS (TOC) STYLING
    ======================================== */
 
-/* Make TOC sticky - adjust top position to account for navbar */
-.sidebar.toc-left,
-.sidebar-toc-left,
-nav[role="navigation"],
-.quarto-sidebar-toc,
-.sidebar-navigation {
+/* Target Quarto's margin sidebar for TOC */
+#quarto-margin-sidebar {
   position: sticky !important;
   top: 5rem !important;
   max-height: calc(100vh - 6rem) !important;
   overflow-y: auto !important;
   align-self: flex-start !important;
+  /* CRITICAL: Allow absolute positioning of resize handle */
+  position: relative !important;
 }
 
 /* TOC container */
@@ -22,14 +20,11 @@ nav[role="navigation"],
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border: 1px solid #e0e4e8;
-  position: sticky !important;
-  top: 5rem !important;
-  max-height: calc(100vh - 6rem) !important;
-  overflow-y: auto !important;
 }
 
 /* TOC title "On this page" */
-.sidebar-title {
+.sidebar-title,
+#TOC > :first-child {
   font-weight: 700;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -90,24 +85,25 @@ nav[role="navigation"],
    RESIZABLE TOC HANDLE
    ======================================== */
 
-/* Resize handle */
+/* Resize handle - FIXED positioning with explicit height */
 .toc-resize-handle {
-  position: absolute;
-  right: 0;
+  position: fixed !important;
+  right: auto !important;
+  width: 25px;
+  height: 100vh;
   top: 0;
-  bottom: 0;
-  width: 8px;
   cursor: ew-resize;
-  z-index: 10;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Position will be calculated by JS based on TOC position */
 }
 
 .toc-resize-handle:hover .resize-line,
 .toc-resize-handle:active .resize-line {
   background-color: #1e3c72;
-  width: 3px;
+  width: 4px;
 }
 
 /* Visual line indicator */
@@ -117,20 +113,5 @@ nav[role="navigation"],
   background-color: #dee2e6;
   transition: all 0.2s ease;
   border-radius: 2px;
-}
-
-/* Make TOC relative positioned for absolute handle */
-.sidebar.toc-left,
-.sidebar-toc-left,
-.sidebar-navigation,
-#quarto-margin-sidebar {
-  position: relative;
-}
-
-/* Smooth transition when not dragging */
-.sidebar.toc-left,
-.sidebar-toc-left,
-.sidebar-navigation,
-#quarto-margin-sidebar {
-  transition: width 0.1s ease-out;
+  pointer-events: none;
 }

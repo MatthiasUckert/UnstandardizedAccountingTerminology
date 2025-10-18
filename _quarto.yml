@@ -9,8 +9,8 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Additional Tables"
-        href: additional-tables.qmd
+      - text: "Dictionaries"
+        href: Dictionaries.qmd
       - text: "Robustness Checks"
         href: robustness.qmd
       - text: "Data & Code"
@@ -37,6 +37,8 @@ format:
     include-after-body:
       - text: |
           <script src="js/resizable-toc.js"></script>
+    grid:
+      margin-width: 480px   # try 320–420px to tast
 
 execute:
-  freeze: auto
+  freeze: auto 
