@@ -25,15 +25,11 @@ We construct alternative accounting dictionaries to capture the universe of acco
 -   **Term Lists**: Unique accounting terms that appear in financial reports
 -   **Concept Lists**: Granular mappings showing which terms are used to describe the same underlying accounting concepts (i.e., synonyms)
 
-## Construction Approaches
-
 **Top-Down (Authoritative Sources):** We collect terms from IFRS, US GAAP, and UK GAAP standards, plus specialized accounting dictionaries and the EU's IATE database. Terms explicitly classified as synonyms are grouped by their underlying concepts. All lists are refined using GPT-based validation and manual checks, then restricted to terminology actually observed in our global corpus of financial reports.
 
 **Bottom-Up (XBRL Filings):** We extract terms directly from financial statements by parsing XBRL filings on EDGAR. Specifically, we use Exhibit 101.LAB files, which map XBRL taxonomy tags to the natural language labels firms actually use in their reports. This captures real-world variation in reporting practice. To reduce noise, we require that 10-K terms appear in at least 20 distinct filings and 20-F terms in at least 5 distinct filings. We apply a majority disambiguation rule, removing terms that appear in less than 5% of filings for a given concept.
 
 # Term Lists
-
-Term lists provide the complete set of unique accounting terms found in financial reports. These are useful for text analysis, dictionary-based approaches, and understanding the breadth of accounting vocabulary.
 
 **Download all term lists:** 📥 [Excel File (2.6 MB)](downloads/Termlists.xlsx)
 
@@ -51,7 +47,7 @@ create_interactive_table(
   .data = arrow::read_parquet("data/Termlists/TermListROW.parquet"),
   .page_length = 10L,
   .column_align = c("center", "center", "left"),
-  .header_align = "center",
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -70,8 +66,8 @@ create_interactive_table(
 create_interactive_table(
   .data = arrow::read_parquet("data/Termlists/TermList10K.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "left"),
-  .header_align = "center",
+  .column_align = c("left", "left", "left"),
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -90,8 +86,8 @@ create_interactive_table(
 create_interactive_table(
   .data = arrow::read_parquet("data/Termlists/TermList20F.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "left"),
-  .header_align = "center",
+  .column_align = c("left", "left", "left"),
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -103,7 +99,6 @@ create_interactive_table(
 
 # Concept Lists
 
-Concept lists map individual terms to accounting concepts, revealing which terms are used interchangeably (i.e., as synonyms) to describe the same accounting concept. Each row represents a unique term-concept pairing.
 
 **Download all concept lists:** 📥 [Excel File](downloads/Conceptlists.xlsx)
 
@@ -122,8 +117,8 @@ Concept lists map individual terms to accounting concepts, revealing which terms
 create_interactive_table(
   .data = arrow::read_parquet("data/Conceptlists/ConceptListROW.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "center", "left"),
-  .header_align = "center",
+  .column_align = c("left", "left", "left", "left"),
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -144,8 +139,8 @@ create_interactive_table(
 create_interactive_table(
   .data = arrow::read_parquet("data/Conceptlists/ConceptList10K.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "center", "left"),
-  .header_align = "center",
+  .column_align = c("left", "left", "left", "left"),
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -166,8 +161,8 @@ create_interactive_table(
 create_interactive_table(
   .data = arrow::read_parquet("data/Conceptlists/ConceptList20F.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "center", "left"),
-  .header_align = "center",
+  .column_align = c("left", "left", "left", "left"),
+  .header_align = "left",
   .filter = "none",
   .font_size = 14L,
   .row_padding = 2L
@@ -181,25 +176,25 @@ create_interactive_table(
 
 ------------------------------------------------------------------------
 
-# t-SNE Visualizations
+<!-- # t-SNE Visualizations -->
 
-Explore the semantic structure of individual concepts using t-SNE projections. Each plot shows how terms within a concept cluster together in two-dimensional embedding space.
+<!-- Explore the semantic structure of individual concepts using t-SNE projections. Each plot shows how terms within a concept cluster together in two-dimensional embedding space. -->
 
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| warning: false -->
+<!-- #| message: false -->
 
-# Load metadata 
-tsne_meta <- arrow::read_parquet("data/tsne_plots_metadata.parquet") %>%
-  dplyr::arrange(List, Model, CID)
-```
+<!-- # Load metadata  -->
+<!-- tsne_meta <- arrow::read_parquet("data/tsne_plots_metadata.parquet") %>% -->
+<!--   dplyr::arrange(List, Model, CID) -->
+<!-- ``` -->
 
-```{r}
-#| echo: false
+<!-- ```{r} -->
+<!-- #| echo: false -->
 
-# Create and display the widget
-create_tsne_widget(tsne_meta)
-```
+<!-- # Create and display the widget -->
+<!-- create_tsne_widget(tsne_meta) -->
+<!-- ``` -->
 
-------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------ -->

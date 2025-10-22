@@ -16,10 +16,10 @@ website:
         href: 01-Dictionaries.qmd
       - text: "Textual Measures"
         href: 02-TextualMeasures.qmd
-      - text: "Robustness Tests"
-        href: 03-RobustnessTests.qmd
-      - text: "TBD ..."
-        href: 04-TBD.qmd
+      - text: "Database Matching"
+        href: 03-DatabaseMatching.qmd
+      - text: "Name Matching Package"
+        href: 04-NameMatching.qmd
     right:
       - icon: github
         href: https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology

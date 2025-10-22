@@ -20,38 +20,37 @@
 create_interactive_table <- function(.data,
                                      .page_length = 25,
                                      .column_align = NULL,
-                                     .header_align = 'center',
-                                     .filter = 'top',
+                                     .header_align = "center",
+                                     .filter = "top",
                                      .font_size = 12,
                                      .row_padding = 6,
                                      ...) {
-  
   # Determine column classes for alignment
   col_defs <- list()
-  
+
   # Apply custom alignment if specified
   if (!is.null(.column_align)) {
     for (i in seq_along(.column_align)) {
       align_class <- switch(.column_align[i],
-                            "left" = "dt-body-left",
-                            "center" = "dt-body-center",
-                            "right" = "dt-body-right",
-                            "dt-body-left"  # default to left
+        "left" = "dt-body-left",
+        "center" = "dt-body-center",
+        "right" = "dt-body-right",
+        "dt-body-left" # default to left
       )
       col_defs <- append(col_defs, list(
-        list(className = align_class, targets = i - 1)  # JS uses 0-based indexing
+        list(className = align_class, targets = i - 1) # JS uses 0-based indexing
       ))
     }
   }
-  
+
   # Configure table options
   dt_options <- list(
     pageLength = .page_length,
     scrollX = TRUE,
     autoWidth = FALSE,
-    searching = FALSE,  # Remove global search
-    lengthChange = FALSE,  # Remove "Show ... rows" dropdown
-    fixedHeader = TRUE,  # Sticky header
+    searching = FALSE, # Remove global search
+    lengthChange = FALSE, # Remove "Show ... rows" dropdown
+    fixedHeader = TRUE, # Sticky header
     language = list(
       info = "Showing _START_ to _END_ of _TOTAL_ entries",
       paginate = list(
@@ -74,22 +73,22 @@ create_interactive_table <- function(.data,
       .header_align
     ))
   )
-  
+
   # Create the datatable - no buttons, clean white background
   dt <- DT::datatable(
     .data,
     filter = .filter,
-    extensions = 'FixedHeader',
+    extensions = "FixedHeader",
     options = dt_options,
-    class = 'hover',  # Only hover effect, no stripes
+    class = "hover", # Only hover effect, no stripes
     rownames = FALSE,
-    style = 'bootstrap4',
+    style = "bootstrap4",
     ...
   )
-  
+
   # Apply custom CSS with user-specified sizing
   css_font <- paste0(.font_size, "px")
-  
+
   # Apply formatting to all columns
   for (i in seq_len(ncol(.data))) {
     dt <- DT::formatStyle(
@@ -98,6 +97,6 @@ create_interactive_table <- function(.data,
       fontSize = css_font
     )
   }
-  
+
   return(dt)
 }
