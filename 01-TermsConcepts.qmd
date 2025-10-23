@@ -153,30 +153,5 @@ tab_conceptlist %>%
 ```
 :::
 
-```{r}
-```
 
-------------------------------------------------------------------------
 
-<!-- # t-SNE Visualizations -->
-
-<!-- Explore the semantic structure of individual concepts using t-SNE projections. Each plot shows how terms within a concept cluster together in two-dimensional embedding space. -->
-
-<!-- ```{r} -->
-<!-- #| echo: false -->
-<!-- #| warning: false -->
-<!-- #| message: false -->
-
-<!-- # Load metadata  -->
-<!-- tsne_meta <- arrow::read_parquet("data/tsne_plots_metadata.parquet") %>% -->
-<!--   dplyr::arrange(List, Model, CID) -->
-<!-- ``` -->
-
-<!-- ```{r} -->
-<!-- #| echo: false -->
-
-<!-- # Create and display the widget -->
-<!-- create_tsne_widget(tsne_meta) -->
-<!-- ``` -->
-
-<!-- ------------------------------------------------------------------------ -->
