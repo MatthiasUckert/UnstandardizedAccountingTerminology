@@ -41,10 +41,6 @@ format:
     link-external-newwindow: true
     grid:
       sidebar-width: 320px
-    include-after-body:
-      - text: |
-          <script src="js/resizable-toc.js"></script>
-          <script src="js/fix-pagination.js"></script>
 
 execute:
   freeze: auto
