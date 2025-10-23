@@ -46,7 +46,7 @@ We construct alternative accounting dictionaries to capture the universe of acco
 create_interactive_table(
   .data = arrow::read_parquet("data/Termlists/TermListROW.parquet"),
   .page_length = 10L,
-  .column_align = c("center", "center", "left"),
+  .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
   .font_size = 14L,

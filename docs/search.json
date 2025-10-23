@@ -422,8 +422,22 @@
   {
     "objectID": "03-DatabaseMatching.html",
     "href": "03-DatabaseMatching.html",
-    "title": "Robustness Tests",
+    "title": "Database Item Matching",
     "section": "",
-    "text": "Place Holder … We could show additional tables (sepcifications)"
+    "text": "Overview\n…\n\nWorldscope (Income Statement)Worldscope (Balance Sheet)Compustat (Income Statement)Compustat (Balance Sheet)"
+  },
+  {
+    "objectID": "03-DatabaseMatching.html#worldscope",
+    "href": "03-DatabaseMatching.html#worldscope",
+    "title": "Database Item Matching",
+    "section": "Worldscope",
+    "text": "Worldscope\n\nIncome StatementBalance Sheet"
+  },
+  {
+    "objectID": "03-DatabaseMatching.html#compustat",
+    "href": "03-DatabaseMatching.html#compustat",
+    "title": "Database Item Matching",
+    "section": "Compustat",
+    "text": "Compustat\n\nIncome StatementBalance Sheet"
   }
 ]
