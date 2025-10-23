@@ -122,6 +122,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#about-this-repository" id="toc-about-this-repository" class="nav-link" data-scroll-target="#about-this-repository">About This Repository</a></li>
   </ul>
 </nav>
 </nav>
@@ -154,7 +155,18 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The communication of accounting information requires a domain-specific vocabulary, and in specialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is unstandardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and increases human and computerized information processing costs, i.e., has economic consequences.</p>
+<p>The communication of accounting information requires a domain-specific vocabulary, and, in spe-cialized languages, standardization is considered a key to clear communication, i.e., one term should only be assigned to one concept and vice versa. In practice, accounting terminology is un-standardized and produces undue complexity. We provide the first large-sample evidence on the level and the implications of unstandardized accounting terminology for a global corpus of annual reports. Our study shows that unstandardized accounting terminology is widespread and has eco-nomic consequences, increasing human and computerized information processing costs.</p>
+<hr>
+</section>
+<section id="about-this-repository" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-repository">About This Repository</h2>
+<p>This repository provides supplementary materials for our paper: <em>Unstandardized Accounting Terminology</em>. Datasets, concept mappings, as well as our code for company name matching available for download.</p>
+<p><strong>What You’ll Find:</strong></p>
+<ul>
+<li><p><a href="./01-TermsConcepts.html"><strong>Terms &amp; Concepts</strong></a>: Complete accounting dictionaries constructed using top-down (authoritative sources) and bottom-up (XBRL filings) approaches. Includes term lists, concept lists showing synonyms, and frequency statistics across our global corpus of annual reports.</p></li>
+<li><p><a href="./02-DatabaseMatching.html"><strong>Database Item Matching</strong></a>: Mappings between Compustat and Worldscope data items and our accounting concepts. These mappings enable analysis of how terminology standardization affects data collection by commercial providers.</p></li>
+<li><p><a href="./03-NameMatching.html"><strong>Name Matching Package</strong></a>: An R package (rMatching) for fuzzy matching of firm names across databases. Developed for matching Perfect Information filings to Datastream, but applicable to any general name matching task. Available on GitHub.</p></li>
+</ul>
 
 
 </section>
