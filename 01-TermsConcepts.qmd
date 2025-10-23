@@ -1,5 +1,5 @@
 ---
-title: "Dictionaries"
+title: "Terms & Concepts"
 ---
 
 ```{r}
@@ -51,7 +51,7 @@ We construct alternative accounting dictionaries to capture the universe of acco
 
 # Term Lists
 
-**Download all term lists:** 📥 [Excel File (2.6 MB)](downloads/Termlists.xlsx)
+**Download all term lists:** 📥 [Excel File (2.9 MB)](downloads/Termlists.xlsx)
 
 ::: panel-tabset
 ### Top-Down
@@ -64,6 +64,7 @@ We construct alternative accounting dictionaries to capture the universe of acco
 #| message: false
 tab_termlist %>%
   dplyr::filter(Termlist == "Top-Down") %>%
+  dplyr::select(-Termlist) %>%
   default_table()
 ```
 
@@ -78,6 +79,7 @@ tab_termlist %>%
 
 tab_termlist %>%
   dplyr::filter(Termlist == "Bottom-Up (10-Ks)") %>%
+  dplyr::select(-Termlist) %>%
   default_table()
 ```
 
@@ -92,6 +94,7 @@ tab_termlist %>%
 
 tab_termlist %>%
   dplyr::filter(Termlist == "Bottom-Up (20-Fs)") %>%
+  dplyr::select(-Termlist) %>%
   default_table()
 ```
 :::
@@ -101,7 +104,7 @@ tab_termlist %>%
 # Concept Lists
 
 
-**Download all concept lists:** 📥 [Excel File](downloads/Conceptlists.xlsx)
+**Download all concept lists:** 📥 [Excel File (2.7 MB)](downloads/Conceptlists.xlsx)
 
 ::: panel-tabset
 ### Top-Down
@@ -117,6 +120,7 @@ tab_termlist %>%
 
 tab_conceptlist %>%
   dplyr::filter(Conceptlist == "Top-Down") %>%
+  dplyr::select(-Conceptlist) %>%
   default_table()
 ```
 
@@ -133,6 +137,7 @@ tab_conceptlist %>%
 
 tab_conceptlist %>%
   dplyr::filter(Conceptlist == "Bottom-Up (10-Ks)") %>%
+  dplyr::select(-Conceptlist) %>%
   default_table()
 ```
 
@@ -149,9 +154,120 @@ tab_conceptlist %>%
 
 tab_conceptlist %>%
   dplyr::filter(Conceptlist == "Bottom-Up (20-Fs)") %>%
+  dplyr::select(-Conceptlist) %>%
   default_table()
 ```
 :::
 
+# -------------------------
 
 
+# Most Common Terms
+
+**Download most common terms:** 📥 [Excel File (5.1 MB)](downloads/MostCommonTerms.xlsx)
+
+::: panel-tabset
+### Top-Down
+
+**Source:** IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+tab_mc_termlist %>%
+  dplyr::filter(Termlist == "Top-Down") %>%
+  dplyr::select(-Termlist) %>%
+  default_table()
+```
+
+### Bottom-Up (10-Ks)
+
+**Source:** \~50,000 U.S. 10-K XBRL filings (2009-2025)
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+tab_mc_termlist %>%
+  dplyr::filter(Termlist == "Bottom-Up (10-Ks)") %>%
+  dplyr::select(-Termlist) %>%
+  default_table()
+```
+
+### Bottom-Up (20-Fs)
+
+**Source:** 20-F XBRL filings from non-U.S. firms using IFRS Taxonomy (2009-2025)
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+tab_mc_termlist %>%
+  dplyr::filter(Termlist == "Bottom-Up (20-Fs)") %>%
+  dplyr::select(-Termlist) %>%
+  default_table()
+```
+:::
+
+------------------------------------------------------------------------
+
+# Most Common Concepts
+
+
+**Download all most common concepts:** 📥 [Excel File (4.8 MB)](downloads/MostCommonConcepts.xlsx)
+
+::: panel-tabset
+### Top-Down
+
+**Construction:** Terms from dictionaries and standards explicitly classified as synonyms are grouped into concepts. Concepts are validated using graph theory (complete graph property) and GPT-based checks to ensure all terms within a concept are truly interchangeable.
+
+**Structure:** Each row shows a term (TID) and its associated concept (CID), along with the n-gram count.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+tab_mc_conceptlist %>%
+  dplyr::filter(Conceptlist == "Top-Down") %>%
+  dplyr::select(-c(Conceptlist, RankTID, TID)) %>%
+  default_table()
+```
+
+### Bottom-Up (10-Ks)
+
+**Construction:** Terms are grouped by XBRL taxonomy tags, where each tag represents a distinct accounting concept. Terms linked to multiple tags are assigned to their primary concept using a majority rule (5% threshold).
+
+**Structure:** Each row shows which term (TID) maps to which XBRL concept (CID). This reveals how U.S. domestic filers describe the same accounting items using different terminology.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+tab_mc_conceptlist %>%
+  dplyr::filter(Conceptlist == "Bottom-Up (10-Ks)") %>%
+  dplyr::select(-c(Conceptlist, RankTID, TID)) %>%
+  default_table()
+```
+
+### Bottom-Up (20-Fs)
+
+**Construction:** Same methodology as 10-K, but using IFRS Taxonomy tags from 20-F filings. Captures how international filers describe accounting concepts.
+
+**Structure:** Each row shows term-concept mappings based on IFRS Taxonomy, revealing cross-border variation in financial reporting language.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+tab_mc_conceptlist %>%
+  dplyr::filter(Conceptlist == "Bottom-Up (20-Fs)") %>%
+  dplyr::select(-c(Conceptlist, RankTID, TID)) %>%
+  default_table()
+```
+:::

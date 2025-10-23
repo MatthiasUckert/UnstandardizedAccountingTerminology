@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Database Item Matching – Unstandardized Accounting Terminology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bd63947361cc09c26c9720e3e8732944.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-bootstrap4-1.13.6/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-bootstrap4-1.13.6/css/dataTables.bootstrap4.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-bootstrap4-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/dt-core-bootstrap4-1.13.6/js/dataTables.bootstrap4.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Unstandardized Accounting Terminology</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./01-TermsConcepts.html"> 
+<span class="menu-text">Terms &amp; Concepts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./02-DatabaseMatching.html" aria-current="page"> 
+<span class="menu-text">Database Matching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./03-NameMatching.html"> 
+<span class="menu-text">Name Matching Package</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#worldscope" id="toc-worldscope" class="nav-link" data-scroll-target="#worldscope">Worldscope</a></li>
+  <li><a href="#compustat" id="toc-compustat" class="nav-link" data-scroll-target="#compustat">Compustat</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Database Item Matching</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<hr>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>…</p>
+<p><strong>Download Worldscope/Compustat Matching:</strong> 📥 <a href="downloads/DatabaseConceptMatching.xlsx">Excel File (62 KB)</a></p>
+<section id="worldscope" class="level2">
+<h2 class="anchored" data-anchor-id="worldscope">Worldscope</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Income Statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Balance Sheet</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5134c39fcc2333a9c23a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5134c39fcc2333a9c23a">{"x":{"style":"bootstrap4","filter":"none","vertical":false,"data":[["ID01001","ID01051","ID01151","ID01148","ID01149","ID01150","ID01100","ID01101","ID01230","ID01249","ID01250","ID01253","ID01254","ID01266","ID01301","ID01267","ID01262","ID01251","ID01255","ID01401","ID01451","ID18186","ID18187","ID18188","ID18189","ID18185","ID01501","ID01503","ID01504","ID01505","ID01551","ID01701","ID01706","ID01601","ID01651"],["Net Sales or Revenues          ","  Cost of Goods Sold        ","  Depreciation, Depletion &amp; Amortization        ","      Depreciation    ","      Amortization of Intangibles    ","      Amortization of Deferred Charges    ","    Gross Income      ","  Selling, General &amp; Administrative Expenses        ","  Other Operating Expenses        ","Operating Expenses - Total          ","Operating Income          ","  Extraordinary Credit - Pre-tax        ","  Extraordinary Charge - Pre-tax        ","  Non-Operating Interest Income        ","  Reserves - Increase/Decrease        ","  Pre-tax Equity in Earnings        ","  Other Income/Expense - Net        ","  Interest Expense on Debt        ","  Interest Capitalized        ","Pre-tax Income          ","  Income Taxes        ","  Current Domestic Income Tax        ","  Current Foreign Income Tax        ","  Deferred Domestic Income Tax        ","  Deferred Foreign Income Tax        ","  Income Tax Credits        ","  Minority Interest        ","  Equity in Earnings        ","  After Tax Other Income/Expense        ","  Discontinued Operations        ","Net Income before Extraordinary Items/Preferred Dividends          ","  Preferred Dividend Requirements        ","Net Income after Preferred Dividends (Basic EPS)          ","  Extraordinary Items &amp; Gain/Loss Sale of Assets        ","Net Income- Bottom Line          "],["revenue\r\nrevenues","costofsales\r\ncostofmerchandisesold\r\ncostofrevenue\r\ncostofgoodsandservicessold","depreciationandamortisationexpense\r\ndepreciationandamortization\r\ndepreciationdepletionandamortization","depreciationexpense\r\ndepreciation","amortisationexpense\r\namortizationofintangibleassets","amortizationofdeferredcharges","grossprofit","sellinggeneralandadministrativeexpense","othercostandexpenseoperating","operatingexpense\r\noperatingexpenses\r\noperatingcostsandexpenses","profitlossfromoperatingactivities\r\noperatingincomeloss",null,null,"revenuefrominterest\r\ninvestmentincomeinterest",null,null,"nonoperatingincomeexpense","interestexpense\r\ninterestexpenseonborrowings\r\ninterestexpensedebt","interestcostscapitalised\r\ninterestcostscapitalized","profitlossbeforetax\r\nincomelossfromcontinuingoperationsbeforeincometaxesextraordinaryitemsnoncontrollinginterest","incometaxexpensecontinuingoperations\r\nincometaxexpensebenefit",null,null,null,"deferredforeignincometaxexpensebenefit",null,"profitlossattributabletononcontrollinginterests\r\nnetincomelossattributabletononcontrollinginterest","shareofprofitlossofassociatesaccountedforusingequitymethod\r\nincomelossfromequitymethodinvestments",null,"profitlossfromdiscontinuedoperations\r\nincomelossfromdiscontinuedoperationsnetoftax",null,null,null,null,"profitloss\r\nnetincomeloss"]],"container":"<table class=\"table table-hover\">\n  <thead>\n    <tr>\n      <th>Item\nCode<\/th>\n      <th>ItemDescription<\/th>\n      <th>XBRL\nTag(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"autoWidth":false,"searching":false,"lengthChange":false,"fixedHeader":false,"language":{"info":"Showing _START_ to _END_ of _TOTAL_ entries","paginate":{"first":"First","last":"Last","next":"Next","previous":"Prev"}},"columnDefs":[{"className":"dt-body-left","targets":0},{"className":"dt-body-left","targets":1},{"className":"dt-body-left","targets":2},{"name":"Item\nCode","targets":0},{"name":"ItemDescription","targets":1},{"name":"XBRL\nTag(s)","targets":2}],"drawCallback":"function(settings) {\n        var api = this.api();\n        // Remove href from pagination buttons\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","initComplete":"function(settings, json) {\n        $(this.api().table().header()).css({\n          'background-color': '#f8f9fa',\n          'border-bottom': '2px solid #dee2e6',\n          'font-weight': '600',\n          'text-align': 'left'\n        });\n        // Also remove href on initial load\n        var api = this.api();\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","order":[],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'13px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'13px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'13px'});\n}"}},"evals":["options.drawCallback","options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-cb41de945e3cf25862c5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-cb41de945e3cf25862c5">{"x":{"style":"bootstrap4","filter":"none","vertical":false,"data":[[null,null,"ID02001","ID02003","ID02008","ID02051","ID02101","ID02097","ID02098","ID02099","ID02100","ID02140","ID02149","ID02201",null,"ID02258","ID02256","ID02250","ID02501","ID02301","ID18375","ID18376","ID18377","ID18378","ID18380","ID18379","ID18381","ID18390","ID02401","ID18383","ID18384","ID18385","ID18386","ID18388","ID18387","ID18389","ID18392","ID02652","ID02647","ID02648","ID02649","ID02654","ID02502","ID02505","ID02509","ID02511","ID02516","ID02514","ID02655","ID02503","ID02506","ID02508","ID02512","ID02517","ID02515","ID02999",null,"ID03040","ID03051","ID03054","ID03063","ID03061","ID03066","ID03101",null,"ID03251","ID03245","ID18281","ID18282","ID03249","ID03260","ID03261","ID03259","ID03262","ID03263","ID18183","ID18184","ID03257","ID03273","ID03351","ID03401","ID03426","ID03995","ID03451","ID03448","ID03449","ID03501","ID03480","ID03481","ID03492","ID03493","ID03494","ID03495","ID03490","ID03496","ID03497","ID03498","ID03499","ID03999"],["Assets          ","  Current Assets        ","      Cash &amp; Short Term Investments    ","        Cash  ","        Short Term Investments  ","      Receivables (Net)    ","      Inventories -Total    ","        Raw Materials  ","        Work in Process  ","        Finished Goods  ","        Progress Payments &amp; Other  ","      Prepaid Expenses    ","      Other Current Assets    ","    Current Assets - Total      ","  Non Current Assets        ","    Long Term Receivables      ","    Investment in Associated Companies      ","    Other Investments      ","    Property Plant and Equipment – Net      ","      Property Plant and Equipment - Gross    ","        Land - Gross  ","        Buildings - Gross  ","        Machinery &amp; Equipment - Gross  ","        Rental/Lease Property - Gross  ","        Transportation Equipment - Gross  ","        Property Plant &amp; Equipment - Other - Gross  ","        Property Plant &amp; Equipment under Capitalized Leases - Gross  ","        Construction Work in Progress  ","      Accumulated Depreciation    ","        Accumulated Depreciation - Land  ","        Accumulated Depreciation - Buildings  ","        Accumulated Depreciation - Machinery &amp; Equipment  ","        Accumulated Depreciation - Rental/Lease Property  ","        Accumulated Depreciation - Transportation Equipment  ","        Accumulated Depreciation – Other Property Plant &amp; Equipment  ","        Accumulated Depreciation - P P &amp; E under Capitalized Leases  ","        Accumulated Depreciation - Construction Work in Progress  ","    Other Assets      ","      Deferred Charges    ","      Tangible Other Assets    ","      Total Intangible Other Assets - Net    ","        Total Intangible Other Assets - Gross  ","          Goodwill – Gross","          Development Costs - Gross","          Brands , Patents – Gross","          Licenses – Gross","          Computer Software – Gross","          Other Intangible Assets - Gross","        Total Intangible Other Assets – Accumulated Amortization   ","          Goodwill – Accumulated  Amortization","          Development Costs – Accumulated Amortization","          Brands, Patents –  Accumulated Amortization","          Licenses – Accumulated Amortization","          Computer Software – Accumulated Amortization","          Other Intangible Assets – Accumulated Amortization","Total Assets          ","  Current Liabilities        ","      Accounts Payable    ","      Short Term Debt &amp; Current Portion of Long Term Debt    ","      Accrued Payroll    ","       Income Taxes Payable    ","      Dividends Payable    ","      Other Current Liabilities    ","    Current Liabilities - Total      ","  Non Current Liabilities        ","    Long Term Debt      ","      Long Term Debt Excluding Capitalized Leases    ","        Non Convertible Debt  ","        Convertible Debt  ","      Capitalized Lease Obligations    ","    Provision for Risks and Charges       ","      Pension/Post Retirement Benefits    ","      Provision for Risks &amp; Charges  Excl Pension/Retirement Benefits    ","    Deferred Income      ","    Deferred Taxes      ","      Deferred Taxes - Credit    ","      Deferred Taxes - Debit    ","    Deferred Tax Liability in Untaxed Reserves      ","    Other Liabilities      ","  Total Liabilities                 ","  Non-Equity Reserves        ","  Minority Interest        ","  Shareholders Equity        ","     Preferred Stock      ","      Preferred Stock Issued for ESOP    ","      ESOP Guarantees - Preferred Issued    ","    Common Equity      ","      Common Stock    ","      Capital Surplus    ","      Revaluation Reserves    ","      Other Appropriated Reserves    ","      Unappropriated (Free) Reserves    ","      Retained Earnings    ","      Equity in Untaxed Reserves    ","      ESOP Guarantees    ","      Unrealized Foreign Exchange Gain/Loss    ","      Unrealized Gain/Loss on Marketable Securities    ","      Treasury Stock    ","Total Liabilities &amp; Shareholders' Equity                  "],[null,null,"cashandcashequivalents\r\ncashcashequivalentsandshortterminvestments","cash\r\ncashandcashequivalentsatcarryingvalue","shortterminvestmentsclassifiedascashequivalents\r\nshortterminvestments","tradeandothercurrentreceivables\r\ntradeandotherreceivables\r\nreceivablesnetcurrent\r\naccountsreceivablenetcurrent","inventories\r\ninventorynet","rawmaterials\r\ninventoryrawmaterialsnetofreserves","workinprogress\r\ninventoryworkinprocessnetofreserves","finishedgoods\r\ninventoryfinishedgoodsnetofreserves",null,"currentprepaidexpenses\r\nprepaidexpensecurrent","otherassets\r\notherassetscurrent","currentassets\r\nassetscurrent",null,"noncurrentreceivables\r\naccountsreceivablenetnoncurrent","investmentaccountedforusingequitymethod\r\nequitymethodinvestments","noncurrentinvestmentsotherthaninvestmentsaccountedforusingequitymethod\r\notherinvestments","propertyplantandequipment\r\npropertyplantandequipmentnet","propertyplantandequipmentgross","landmember\r\nland","buildingsmember\r\nbuildingsandimprovementsgross\r\ninvestmentbuildingandbuildingimprovements","machinery\r\nmachineryandequipmentgross","investmentproperty\r\nrentalproperties",null,"otherpropertyplantandequipment\r\npropertyplantandequipmentother",null,"constructioninprogress\r\nconstructioninprogressgross","accumulateddepreciationamortisationandimpairmentmember\r\naccumulateddepreciationdepletionandamortizationpropertyplantandequipment",null,null,null,null,null,null,null,null,"othernoncurrentassets\r\notherassetsnoncurrent","noncurrentprepayments\r\nprepaidexpensenoncurrent",null,null,null,"goodwill",null,null,null,"capitalizedcomputersoftwaregross",null,"finitelivedintangibleassetsaccumulatedamortization",null,null,null,null,"capitalizedcomputersoftwareaccumulatedamortization",null,"assets",null,"tradeandothercurrentpayables\r\naccountspayablecurrent","currentborrowingsandcurrentportionofnoncurrentborrowings\r\ndebtcurrent","currentprovisionsforemployeebenefits\r\nemployeerelatedliabilitiescurrent\r\naccruedsalariescurrent","currenttaxliabilitiescurrent\r\naccruedincometaxescurrent\r\ntaxespayablecurrent","currentdividendpayables\r\ndividendspayablecurrent","othercurrentliabilities\r\notherliabilitiescurrent","currentliabilities\r\nliabilitiescurrent",null,"longtermborrowings\r\nlongtermdebtandcapitalleaseobligations","longtermborrowings\r\nlongtermdebtnoncurrent",null,"convertibledebtnoncurrent","noncurrentleaseliabilities\r\ncapitalleaseobligationsnoncurrent",null,"noncurrentrecognisedliabilitiesdefinedbenefitplan\r\npensionandotherpostretirementdefinedbenefitplansliabilitiesnoncurrent",null,"noncurrentdeferredincomeincludingnoncurrentcontractliabilities\r\nnoncurrentadvances\r\ndeferredrevenuenoncurrent\r\ncontractwithcustomerliabilitynoncurrent","currenttaxassetsnoncurrent\r\ndeferredtaxassetsliabilitiesnetnoncurrent","netdeferredtaxliabilities\r\ndeferredincometaxliabilitiesnet","netdeferredtaxassets\r\ndeferredincometaxassetsnet",null,"othernoncurrentliabilities\r\notherliabilitiesnoncurrent","liabilities",null,"noncontrollinginterests\r\nminorityinterest\r\nredeemablenoncontrollinginterestequitycarryingamount","equityattributabletoownersofparentmember\r\nstockholdersequity","preferredstockvalue",null,null,null,"issuedcapitalordinaryshares\r\ncommonstockvalue","sharepremium\r\nadditionalpaidincapitalcommonstock",null,"retainedearningsappropriated","retainedearningsunappropriated","retainedearnings\r\nretainedearningsaccumulateddeficit",null,null,null,"gainslossesonfinancialassetsmeasuredatfairvaluethroughothercomprehensiveincomenetoftax\r\naccumulatedothercomprehensiveincomelossavailableforsalesecuritiesadjustmentnetoftax","treasuryshares\r\ntreasurystockvalue","equityandliabilities\r\nliabilitiesandstockholdersequity"]],"container":"<table class=\"table table-hover\">\n  <thead>\n    <tr>\n      <th>Item\nCode<\/th>\n      <th>ItemDescription<\/th>\n      <th>XBRL\nTag(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"autoWidth":false,"searching":false,"lengthChange":false,"fixedHeader":false,"language":{"info":"Showing _START_ to _END_ of _TOTAL_ entries","paginate":{"first":"First","last":"Last","next":"Next","previous":"Prev"}},"columnDefs":[{"className":"dt-body-left","targets":0},{"className":"dt-body-left","targets":1},{"className":"dt-body-left","targets":2},{"name":"Item\nCode","targets":0},{"name":"ItemDescription","targets":1},{"name":"XBRL\nTag(s)","targets":2}],"drawCallback":"function(settings) {\n        var api = this.api();\n        // Remove href from pagination buttons\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","initComplete":"function(settings, json) {\n        $(this.api().table().header()).css({\n          'background-color': '#f8f9fa',\n          'border-bottom': '2px solid #dee2e6',\n          'font-weight': '600',\n          'text-align': 'left'\n        });\n        // Also remove href on initial load\n        var api = this.api();\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","order":[],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'13px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'13px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'13px'});\n}"}},"evals":["options.drawCallback","options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="compustat" class="level2">
+<h2 class="anchored" data-anchor-id="compustat">Compustat</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Income Statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Balance Sheet</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-6b035bf88dc0f2b7fb6d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6b035bf88dc0f2b7fb6d">{"x":{"style":"bootstrap4","filter":"none","vertical":false,"data":[["SALE",null,"TXW","XOPR","COGS","GP","XSGA",null,"XRD","XLR","XPR","XRENT","XAD","OIBDP","DP","AM","OIADP","XINT","NOPI","NOPIO",null,"ESUB","INTC","FCA","IRENT","IDIT","SPI","PI",null,"PIDOM","PIFO","TXT","TXC","TXFED","TXS","TXFO","TXO","TXDI","TXDFED","TXDS","TXDFO","IBMII","MII","IB","DVP","IBCOM","CSTKE","IBADJ","XIDO","XI","DO",null,"ACCHG","NIADJ","EPSPX","EPSPI","EPSFX","EPSFI","OPEPS","OPREPSX","DILADJ","DILAVX","CSHPRI","CSHFD",null,"DVC"],["Sales/Turnover (Net)      ","    Sales/Turnover is net of:  ","    Excise Taxes  ","Operating Expenses - Total      ","  Cost of Goods Sold    ","    Gross Profit (Loss)  ","  Selling, General and Administrative Expenses    ","    Operating Expenses include:  ","    Research and Development Expense  ","    Staff Expense - Total  ","    Pension Expense  ","    Rental Expense  ","    Advertising Expense  ","Operating Income Before Depreciation      ","Depreciation and Amortization - Total      ","  Amortization of Intangibles    ","Operating Income After Depreciation      ","Interest and Related Expense      ","Nonoperating Income (Expense) - Total      ","  Nonoperating Income (Expense) - Excluding Interest Income    ","    Nonoperating Income (Expense) includes:  ","    Equity in Earnings- Unconsolidated Subsidiaries  ","    Interest Capitalized  ","    Foreign Exchange Income (Loss)  ","    Rental Income  ","  Interest Income - Total    ","Special Items      ","Pretax Income      ","    Pretax Income is comprised of:  ","    Pretax Income-Domestic  ","    Pretax Income-Foreign  ","Income Taxes - Total      ","  Income Taxes - Current    ","    Income Taxes - Federal  ","    Income Taxes - State  ","    Income Taxes - Foreign  ","  Income Taxes - Other    ","  Income Taxes - Deferred    ","    Deferred Taxes-Federal  ","    Deferred Taxes-State  ","    Deferred Taxes-Foreign  ","Income Before Extraordinary Items and Noncontrolling Interest      ","Noncontrolling Interest - Income Account      ","Income Before Extraordinary Items      ","Dividends - Preferred/Preference      ","Income Before Extraordinary Items - Available for Common      ","Common Stock Equivalents - Dollar Savings      ","Income Before Extraordinary Items - Adjusted for Common Stock Equivalents      ","Extraordinary Items and Discontinued Operations      ","  Extraordinary Items     ","  Discontinued Operations    ","    Extraordinary Items include:  ","    Accounting Changes - Cumulative Effect  ","Net Income (Loss)      ","Earnings per Share - Basic  Excluding Extraordinary Items      ","Earnings per Share - Basic  Including Extraordinary Items      ","Earnings per Share - Diluted  Excluding Extraordinary Items      ","Earnings per Share - Diluted  Including Extraordinary Items      ","Earnings per Share from Operations - Basic      ","Earnings per Share from Operations - Diluted      ","  Dilution Adjustment    ","  Dilution Adjustment - Excluding    ","Common Shares Used to Calculate EPS Basic      ","Common Shares Used to Calculate EPS Diluted      ","        ","Dividends Common/Ordinary      "],["revenue\r\nrevenues",null,null,"operatingexpense\r\noperatingexpenses\r\noperatingcostsandexpenses","costofsales\r\ncostofmerchandisesold\r\ncostofrevenue\r\ncostofgoodsandservicessold","grossprofit","sellinggeneralandadministrativeexpense",null,"researchanddevelopmentexpense","wagesandsalaries\r\nlaborandrelatedexpense","postemploymentbenefitexpensedefinedbenefitplans\r\npensionexpense",null,"advertisingexpense\r\nmarketingandadvertisingexpense",null,"depreciationandamortisationexpense\r\ndepreciationandamortization\r\ndepreciationdepletionandamortization","amortisationexpense\r\namortizationofintangibleassets","profitlossfromoperatingactivities\r\noperatingincomeloss","interestexpense\r\ninterestexpenseonborrowings\r\ninterestexpensedebt","nonoperatingincomeexpense",null,null,"shareofprofitlossofassociatesaccountedforusingequitymethod\r\nincomelossfromequitymethodinvestments","interestcostscapitalised\r\ninterestcostscapitalized",null,"rentalincomefrominvestmentproperty\r\nrentalincomenonoperating","revenuefrominterest\r\ninvestmentincomeinterest",null,"profitlossbeforetax\r\nincomelossfromcontinuingoperationsbeforeincometaxesextraordinaryitemsnoncontrollinginterest",null,"incomelossfromcontinuingoperationsbeforeincometaxesdomestic","incomelossfromcontinuingoperationsbeforeincometaxesforeign","incometaxexpensecontinuingoperations\r\nincometaxexpensebenefit","currenttaxexpenseincome\r\ncurrentincometaxexpensebenefit","currentfederaltaxexpensebenefit","currentstateandlocaltaxexpensebenefit","currentforeigntaxexpensebenefit","taxexpenseotherthanincometaxexpense\r\ntaxesother","deferredtaxexpenseincome\r\ndeferredincometaxexpensebenefit","deferredfederalincometaxexpensebenefit",null,"deferredforeignincometaxexpensebenefit",null,"profitlossattributabletononcontrollinginterests\r\nnetincomelossattributabletononcontrollinginterest",null,"adjustmenttoprofitlossforpreferencesharedividends\r\npreferredstockdividendsincomestatementimpact","profitlossattributabletoordinaryequityholdersofparententity\r\nnetincomelossavailabletocommonstockholdersbasic",null,null,null,null,"profitlossfromdiscontinuedoperations\r\nincomelossfromdiscontinuedoperationsnetoftax",null,null,"profitloss\r\nnetincomeloss",null,null,null,null,null,null,null,null,null,null,null,"dividendspaidordinaryshares\r\ndividendscommonstockcash"]],"container":"<table class=\"table table-hover\">\n  <thead>\n    <tr>\n      <th>Item\nCode<\/th>\n      <th>ItemDescription<\/th>\n      <th>XBRL\nTag(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"autoWidth":false,"searching":false,"lengthChange":false,"fixedHeader":false,"language":{"info":"Showing _START_ to _END_ of _TOTAL_ entries","paginate":{"first":"First","last":"Last","next":"Next","previous":"Prev"}},"columnDefs":[{"className":"dt-body-left","targets":0},{"className":"dt-body-left","targets":1},{"className":"dt-body-left","targets":2},{"name":"Item\nCode","targets":0},{"name":"ItemDescription","targets":1},{"name":"XBRL\nTag(s)","targets":2}],"drawCallback":"function(settings) {\n        var api = this.api();\n        // Remove href from pagination buttons\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","initComplete":"function(settings, json) {\n        $(this.api().table().header()).css({\n          'background-color': '#f8f9fa',\n          'border-bottom': '2px solid #dee2e6',\n          'font-weight': '600',\n          'text-align': 'left'\n        });\n        // Also remove href on initial load\n        var api = this.api();\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","order":[],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'13px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'13px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'13px'});\n}"}},"evals":["options.drawCallback","options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-196a9613c050cdd442bb" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-196a9613c050cdd442bb">{"x":{"style":"bootstrap4","filter":"none","vertical":false,"data":[[null,null,"CHE","CH","IVST","RECT","RECTR","TXR","RECCO",null,"RECD","INVT","INVRM","INVWIP","INVFG","INVO","ACO","XPP","ACOX","ACDO","ACT",null,"PPENT","PPEGT","DPACT","IVAEQ","IVAO","INTAN",null,"GDWL","INTANO","AO","DC","AOX","ALDO","AT",null,null,"DLC","DD1","NP",null,"BAST","BASTR","AP","TXP","LCO","XACC","LCOX","DRC","LCT",null,"DLTT",null,"DD2","DD3","DD4","DD5",null,"DCLO","DCVT","DCVSUB","DCVSR","DD","DN","DS","DLTO",null,"DCS","DFS","DM","DUDD","DLTP","TXDITC","TXDB","ITCB","LO","DRLT","LT","MIB",null,"PSTK","PSTKR","PSTKN",null,"PSTKC","CEQ","CSTK","CAPS","RE","REUNA","ACOMINC","SEQO","TSTK","TSTKP","TSTKC","SEQ","MIBN","TEQ","LSE","CSHO"],["ASSETS      ","Current Assets      ","  Cash and Short-Term Investments- Total    ","    Cash  ","    Short-Term Investments  ","  Receivables - Total    ","    Receivables - Trade  ","    Income Tax Refund  ","    Receivables - Current - Other  ","      Receivables are net of:","      Receivables-Est Doubtful","  Inventories - Total    ","    Inventories - Raw Materials  ","    Inventories - Work In Process  ","    Inventories - Finished Goods  ","    Inventories - Other  ","  Current Assets - Other - Total    ","    Prepaid Expenses and Accrued Income  ","    Current Assets - Other (Sundry)  ","    Current Assets of Discontinued Operations  ","Current Assets - Total      ","Non-Current Assets      ","  Property Plant and Equipment - Total (Net)    ","    Property Plant and Equipment - Total (Gross)  ","    Depreciation, Depletion and Amortization (Accumulated)  ","  Investment and Advances - Equity    ","  Investment and Advances - Other    ","  Intangible Assets - Total    ","      Intangibles include:","      Goodwill","      Intangibles - other","  Assets - Other - Total    ","    Deferred Charges  ","    Assets - Other (Sundry)  ","    Long-term Assets of Discontinued Operations  ","Assets - Total      ","LIABILITIES &amp; SHAREHOLDERS' EQUITY      ","Current Liabilities      ","  Debt in Current Liabilities    ","    Long-Term Debt Due in One Year  ","    Notes Payable (Short-Term Borrowings)  ","      Debt - Current Memo Items:","      Average Short-Term Borrowings","      Average Short-Time Borrowings Rate","  Account Payable/Creditors - Trade    ","  Income Taxes Payable    ","  Current Liabilities - Other    ","    Accrued Expenses  ","    Current Liabilities - Other (Sundry)  ","    Deferred Revenue - Current  ","Current Liabilities - Total      ","Long-Term Liabilities      ","  Long-Term Debt - Total    ","      Long-Term Debt is due for repayment:","      Debt - Maturing 2nd Year","      Debt - Maturing 3rd Year","      Debt - Maturing 4th Year","      Debt - Maturing 5th Year","      Long-Term Debt includes:","      Debt - Capitalized Lease Obligations","      Debt - Convertible","      Debt - Subordinated Convertible","      Debt - Senior Convertible","      Debt - Debentures","      Debt - Notes","      Debt - Subordinated","      Other Long-term Debt","      Long-term Debt Supplemental items:","      Debt - Consolidated Subsidiary","      Debt - Finance Subsidiary","      Debt - Mortgages and Other Secured","      Debt - Unamortized Debt Discount and Other","      Long-term Debt - Tied to Prime","  Deferred Taxes and Investment Tax Credit    ","    Deferred Taxes - Balance Sheet  ","    Investment Tax Credit - Balance Sheet  ","  Liabilities - Other    ","    Deferred Revenue - Long-term  ","Liabilities - Total      ","Noncontrolling Interest - Redeemable - Balance Sheet      ","Shareholders' Equity      ","  Preferred/Preference Stock (Capital) - Total    ","    Preferred/Preference Stock - Redeemable  ","    Preferred/Preference Stock - Nonredeemable   ","      Preferred Stock includes:","      Preferred Stock-Convertible","  Common/Ordinary Equity - Total    ","    Common/Ordinary Stock (Capital)  ","    Capital Surplus/Share Premium Reserve  ","    Retained Earnings  ","      Retained Earnings - unadjusted","      Accumulated Other Comprehensive Income (Loss)","      Stockholders' Equity Adjustments - Other","    Treasury Stock - Total (All Capital)  ","      Treasury Stock Dollar Amt-Pref","      Treasury Stock Dollar Amt-Common","Stockholders Equity - Parent - Total      ","  Noncontrolling Interest - Nonredeemable - Balance Sheet    ","Stockholders Equity - Total      ","Liabilities and Stockholders Equity - Total      ","Common Shares Outstanding      "],[null,null,"cashandcashequivalents\r\ncashcashequivalentsandshortterminvestments","cash\r\ncashandcashequivalentsatcarryingvalue","shortterminvestmentsclassifiedascashequivalents\r\nshortterminvestments","tradeandothercurrentreceivables\r\ntradeandotherreceivables\r\nreceivablesnetcurrent\r\naccountsreceivablenetcurrent",null,"incometaxesreceivable","otherreceivables\r\notherreceivablesnetcurrent",null,"allowanceaccountforcreditlossesoffinancialassets\r\nallowancefordoubtfulaccountsreceivablecurrent","inventories\r\ninventorynet","rawmaterials\r\ninventoryrawmaterialsnetofreserves","workinprogress\r\ninventoryworkinprocessnetofreserves","finishedgoods\r\ninventoryfinishedgoodsnetofreserves","otherinventories",null,"currentprepaidexpenses\r\nprepaidexpensecurrent","otherassets\r\notherassetscurrent","assetsofdisposalgroupincludingdiscontinuedoperationcurrent","currentassets\r\nassetscurrent",null,"propertyplantandequipment\r\npropertyplantandequipmentnet","propertyplantandequipmentgross","accumulateddepreciationamortisationandimpairmentmember\r\naccumulateddepreciationdepletionandamortizationpropertyplantandequipment","investmentsinaffiliatessubsidiariesassociatesandjointventures","otherlongterminvestments",null,null,"goodwill","intangibleassetsotherthangoodwill\r\nintangibleassetsnetexcludinggoodwill","otherassets","noncurrentprepayments\r\nprepaidexpensenoncurrent","othernoncurrentassets\r\notherassetsnoncurrent","disposalgroupincludingdiscontinuedoperationassetsnoncurrent","assets",null,null,"currentborrowingsandcurrentportionofnoncurrentborrowings\r\ndebtcurrent","currentportionoflongtermborrowings\r\nlongtermdebtandcapitalleaseobligationscurrent\r\nlongtermdebtcurrent","shorttermborrowings",null,null,null,"tradeandothercurrentpayables\r\naccountspayablecurrent","currenttaxliabilitiescurrent\r\naccruedincometaxescurrent\r\ntaxespayablecurrent",null,"currentaccruedexpensesandothercurrentliabilities\r\naccruedliabilitiescurrent","othercurrentliabilities\r\notherliabilitiescurrent","deferredincomeincludingcontractliabilities\r\ncurrentadvances\r\ncontractwithcustomerliabilitycurrent\r\ndeferredrevenuecurrent","currentliabilities\r\nliabilitiescurrent",null,"longtermborrowings\r\nlongtermdebtandcapitalleaseobligations",null,null,null,null,null,null,"noncurrentleaseliabilities\r\ncapitalleaseobligationsnoncurrent","convertibledebtnoncurrent",null,null,null,"notesanddebenturesissued\r\nnotespayable","subordinatedliabilities\r\nsubordinateddebt","noncurrentportionofothernoncurrentborrowings\r\notherlongtermdebtnoncurrent",null,null,null,null,null,null,"deferredincometaxesandtaxcredits","netdeferredtaxliabilities\r\ndeferredincometaxliabilitiesnet","unusedtaxcreditsforwhichnodeferredtaxassetrecognised\r\naccumulateddeferredinvestmenttaxcredit","othernoncurrentliabilities\r\notherliabilitiesnoncurrent","noncurrentdeferredincomeincludingnoncurrentcontractliabilities\r\nnoncurrentadvances\r\ndeferredrevenuenoncurrent\r\ncontractwithcustomerliabilitynoncurrent","liabilities","noncontrollinginterests\r\nminorityinterest\r\nredeemablenoncontrollinginterestequitycarryingamount",null,"preferredstockvalue",null,null,null,null,null,"issuedcapitalordinaryshares\r\ncommonstockvalue","sharepremium\r\nadditionalpaidincapitalcommonstock","retainedearnings\r\nretainedearningsaccumulateddeficit",null,"accumulatedothercomprehensiveincome\r\naccumulatedothercomprehensiveincomelossnetoftax",null,"treasuryshares\r\ntreasurystockvalue",null,"treasurystockcommonvalue","equityattributabletoownersofparentmember\r\nstockholdersequity",null,"equity\r\nstockholdersequityincludingportionattributabletononcontrollinginterest","equityandliabilities\r\nliabilitiesandstockholdersequity",null]],"container":"<table class=\"table table-hover\">\n  <thead>\n    <tr>\n      <th>Item\nCode<\/th>\n      <th>ItemDescription<\/th>\n      <th>XBRL\nTag(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"scrollX":true,"autoWidth":false,"searching":false,"lengthChange":false,"fixedHeader":false,"language":{"info":"Showing _START_ to _END_ of _TOTAL_ entries","paginate":{"first":"First","last":"Last","next":"Next","previous":"Prev"}},"columnDefs":[{"className":"dt-body-left","targets":0},{"className":"dt-body-left","targets":1},{"className":"dt-body-left","targets":2},{"name":"Item\nCode","targets":0},{"name":"ItemDescription","targets":1},{"name":"XBRL\nTag(s)","targets":2}],"drawCallback":"function(settings) {\n        var api = this.api();\n        // Remove href from pagination buttons\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","initComplete":"function(settings, json) {\n        $(this.api().table().header()).css({\n          'background-color': '#f8f9fa',\n          'border-bottom': '2px solid #dee2e6',\n          'font-weight': '600',\n          'text-align': 'left'\n        });\n        // Also remove href on initial load\n        var api = this.api();\n        $(api.table().container()).find('.dataTables_paginate a').each(function() {\n          $(this).removeAttr('href');\n        });\n      }","order":[],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'13px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'13px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'13px'});\n}"}},"evals":["options.drawCallback","options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 | Supplementary materials for JAE submission</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

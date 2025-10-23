@@ -14,12 +14,10 @@ website:
         href: index.qmd
       - text: "Terms & Concepts"
         href: 01-TermsConcepts.qmd
-      - text: "Textual Measures"
-        href: 02-TextualMeasures.qmd
       - text: "Database Matching"
-        href: 03-DatabaseMatching.qmd
+        href: 02-DatabaseMatching.qmd
       - text: "Name Matching Package"
-        href: 04-NameMatching.qmd
+        href: 03-NameMatching.qmd
     right:
       - icon: github
         href: https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology
