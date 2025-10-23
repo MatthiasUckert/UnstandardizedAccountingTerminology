@@ -50,7 +50,7 @@ create_interactive_table <- function(.data,
     autoWidth = FALSE,
     searching = FALSE, # Remove global search
     lengthChange = FALSE, # Remove "Show ... rows" dropdown
-    fixedHeader = TRUE, # Sticky header
+    fixedHeader = FALSE, # Sticky header
     language = list(
       info = "Showing _START_ to _END_ of _TOTAL_ entries",
       paginate = list(
@@ -78,7 +78,7 @@ create_interactive_table <- function(.data,
   dt <- DT::datatable(
     .data,
     filter = .filter,
-    extensions = "FixedHeader",
+    # extensions = "FixedHeader",
     options = dt_options,
     class = "hover", # Only hover effect, no stripes
     rownames = FALSE,

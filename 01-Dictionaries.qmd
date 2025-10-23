@@ -40,7 +40,7 @@ We construct alternative accounting dictionaries to capture the universe of acco
 
 ```{r}
 #| echo: false
-#| warning: false
+#| warning: false 
 #| message: false
 
 create_interactive_table(
@@ -49,7 +49,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )  
 ```
@@ -69,7 +69,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )
 ```
@@ -89,7 +89,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )
 ```

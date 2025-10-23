@@ -2,7 +2,6 @@
 title: "Database Item Matching"
 ---
 
-
 ```{r}
 #| echo: false 
 #| warning: false 
@@ -15,13 +14,13 @@ library(arrow)
 source("R/02-TableFunctions.R")
 ```
 
-
 ------------------------------------------------------------------------
 
 # Overview
 
 ...
 
+**Download Worldscope/Compustat Matching:** 📥 [Excel File (62 KB)](downloads/DatabaseConceptMatching.xlsx)
 
 ## Worldscope
 
@@ -40,7 +39,6 @@ lst_matching <- arrow::read_parquet("data/DatabaseMatching.parquet") %>%
 lst_matching <- purrr::set_names(lst_matching$data, lst_matching$ID)
 ```
 
-
 ### Income Statement
 
 ```{r}
@@ -49,12 +47,12 @@ lst_matching <- purrr::set_names(lst_matching$data, lst_matching$ID)
 #| message: false
 
 create_interactive_table(
-  .data = lst_matching$`Worldscope-Income Statement`,
+  .data = lst_matching$`Worldscope-Income Statement`[, 1:3],
   .page_length = 10L,
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )  
 ```
@@ -67,36 +65,34 @@ create_interactive_table(
 #| message: false
 
 create_interactive_table(
-  .data = lst_matching$`Worldscope-Balance Sheet`,
+  .data = lst_matching$`Worldscope-Balance Sheet`[, 1:3],
   .page_length = 10L,
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )  
 ```
-
 :::
-
 
 ## Compustat
 
 ::: panel-tabset
-
 ### Income Statement
+
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 
 create_interactive_table(
-  .data = lst_matching$`Compustat-Income Statement`,
+  .data = lst_matching$`Compustat-Income Statement`[, 1:3],
   .page_length = 10L,
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )  
 ```
@@ -109,15 +105,13 @@ create_interactive_table(
 #| message: false
 
 create_interactive_table(
-  .data = lst_matching$`Compustat-Balance Sheet`,
+  .data = lst_matching$`Compustat-Balance Sheet`[, 1:3],
   .page_length = 10L,
   .column_align = c("left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )  
 ```
-
-
 :::
