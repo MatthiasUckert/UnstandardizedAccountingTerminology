@@ -44,13 +44,14 @@ create_interactive_table <- function(.data,
   }
 
   # Configure table options
+  # Configure table options
   dt_options <- list(
     pageLength = .page_length,
     scrollX = TRUE,
     autoWidth = FALSE,
-    searching = FALSE, # Remove global search
-    lengthChange = FALSE, # Remove "Show ... rows" dropdown
-    fixedHeader = FALSE, # Sticky header
+    searching = FALSE,
+    lengthChange = FALSE,
+    fixedHeader = FALSE,
     language = list(
       info = "Showing _START_ to _END_ of _TOTAL_ entries",
       paginate = list(
@@ -61,6 +62,16 @@ create_interactive_table <- function(.data,
       )
     ),
     columnDefs = col_defs,
+    # Prevent page jumps
+    drawCallback = DT::JS(
+      "function(settings) {
+        var api = this.api();
+        // Remove href from pagination buttons
+        $(api.table().container()).find('.dataTables_paginate a').each(function() {
+          $(this).removeAttr('href');
+        });
+      }"
+    ),
     initComplete = DT::JS(sprintf(
       "function(settings, json) {
         $(this.api().table().header()).css({
@@ -68,6 +79,11 @@ create_interactive_table <- function(.data,
           'border-bottom': '2px solid #dee2e6',
           'font-weight': '600',
           'text-align': '%s'
+        });
+        // Also remove href on initial load
+        var api = this.api();
+        $(api.table().container()).find('.dataTables_paginate a').each(function() {
+          $(this).removeAttr('href');
         });
       }",
       .header_align

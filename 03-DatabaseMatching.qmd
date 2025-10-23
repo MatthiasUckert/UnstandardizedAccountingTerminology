@@ -85,7 +85,7 @@ create_interactive_table(
 #| echo: false
 #| warning: false
 #| message: false
-
+ 
 create_interactive_table(
   .data = lst_matching$`Compustat-Income Statement`[, 1:3],
   .page_length = 10L,

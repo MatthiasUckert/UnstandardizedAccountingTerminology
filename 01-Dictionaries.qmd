@@ -39,7 +39,7 @@ We construct alternative accounting dictionaries to capture the universe of acco
 **Source:** IFRS, US GAAP, UK GAAP standards, and specialized accounting dictionaries
 
 ```{r}
-#| echo: false
+#| echo: false 
 #| warning: false 
 #| message: false
 
@@ -51,7 +51,7 @@ create_interactive_table(
   .filter = "none",
   .font_size = 13L,
   .row_padding = 2L
-)  
+) 
 ```
 
 ### Bottom-Up (10-K)
@@ -120,7 +120,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )
 ```
@@ -142,7 +142,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 )
 ```
@@ -164,7 +164,7 @@ create_interactive_table(
   .column_align = c("left", "left", "left", "left"),
   .header_align = "left",
   .filter = "none",
-  .font_size = 14L,
+  .font_size = 13L,
   .row_padding = 2L
 ) 
 ```

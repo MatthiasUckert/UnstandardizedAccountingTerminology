@@ -138,3 +138,23 @@
   background-color: transparent;
   border-bottom-color: #1e3c72;
 }
+
+/* Prevent page jump on pagination clicks */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  cursor: pointer !important;
+}
+
+.dataTables_wrapper .dataTables_paginate a {
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+/* Critical: Override any scroll behavior */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Ensure pagination clicks don't trigger scroll */
+.dataTables_wrapper .dataTables_paginate .paginate_button:focus {
+  outline: none;
+}
