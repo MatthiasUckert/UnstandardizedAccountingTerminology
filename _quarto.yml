@@ -13,7 +13,7 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Terms & Concepts"
-        href: 01-Dictionaries.qmd
+        href: 01-TermsConcepts.qmd
       - text: "Textual Measures"
         href: 02-TextualMeasures.qmd
       - text: "Database Matching"
