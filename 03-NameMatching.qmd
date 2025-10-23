@@ -10,12 +10,9 @@ title: "Name Matching Package"
 
 ## Installation
 
-You can install the development version of rMatching from [GitHub](https://github.com/) with:
+You can install the development version of rMatching from GitHub with:
 
-```{r}
-# install.packages("devtools")
-# devtools::install_github("TerminologyStandardization/rMatching")
-```
+`devtools::install_github("TerminologyStandardization/rMatching")`
 
 ## Build-In Tables
 

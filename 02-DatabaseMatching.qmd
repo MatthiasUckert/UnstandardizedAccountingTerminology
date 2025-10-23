@@ -1,10 +1,9 @@
 ---
 title: "Database Item Matching"
 ---
-
 ```{r}
-#| echo: false 
-#| warning: false 
+#| echo: false
+#| warning: false
 #| message: false
 
 # Load required packages
@@ -13,10 +12,10 @@ library(arrow)
 
 source("R/02-TableFunctions.R")
 
-tab_matching <- arrow::read_parquet("data/DatabaseMatching.parquet") %>% 
-  dplyr::select(-Order) %>% 
-  dplyr::rename_with(~ gsub("\\.", "\n", .)) %>% 
-  dplyr::select(-`Du\net\nal\n\n(2022)`, -dplyr::matches("Concept")) %>% 
+tab_matching <- arrow::read_parquet("data/DatabaseMatching.parquet") %>%
+  dplyr::select(-Order) %>%
+  dplyr::rename_with(~ gsub("\\.", "\n", .)) %>%
+  dplyr::select(-`Du\net\nal\n\n(2022)`, -dplyr::matches("Concept")) %>%
   dplyr::rename(`Item Name` = ItemDescription)
 
 default_table <- function(.tab) {
@@ -36,16 +35,23 @@ default_table <- function(.tab) {
 
 # Overview
 
-...
+We match balance sheet and income statement data items from Worldscope and Compustat to our accounting concept lists. This enables our analysis of how terminology standardization affects data collection by commercial providers.
 
-**Download Worldscope/Compustat Matching:** 📥 [Excel File (62 KB)](downloads/DatabaseConceptMatching.xlsx)
+**Matching Procedure:** We use fuzzy string matching (restricted Levenshtein distance) between database item names and terms in our concept lists, selecting the 15 closest matches for manual validation. For the top-down list, we also use GPT-based matching. For the bottom-up list, we validate matches by comparing XBRL documentation with database definitions.
+
+**Coverage:** We match 139 (119) unique Compustat (Worldscope) items to our top-down list and 95 (81) unique Compustat (Worldscope) items to our bottom-up list.
+
+The tables below show each database item's code, name, and the XBRL tags that map to our concepts. The downloadable Excel file includes the full concept mappings.
+
+📥 **Download:** [Excel File (62 KB)](downloads/DatabaseConceptMatching.xlsx)
+
+------------------------------------------------------------------------
 
 ## Worldscope
 
 ::: panel-tabset
 
 ### Income Statement
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -54,11 +60,11 @@ default_table <- function(.tab) {
 tab_matching %>%
   dplyr::filter(Database == "Worldscope", Panel == "Income Statement") %>%
   dplyr::select(-Database, -Panel) %>%
+  dplyr::distinct() %>%
   default_table()
 ```
 
 ### Balance Sheet
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -67,28 +73,30 @@ tab_matching %>%
 tab_matching %>%
   dplyr::filter(Database == "Worldscope", Panel == "Balance Sheet") %>%
   dplyr::select(-Database, -Panel) %>%
+  dplyr::distinct() %>%
   default_table()
 ```
 :::
+
+------------------------------------------------------------------------
 
 ## Compustat
 
 ::: panel-tabset
 ### Income Statement
-
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
- 
+
 tab_matching %>%
   dplyr::filter(Database == "Compustat", Panel == "Income Statement") %>%
   dplyr::select(-Database, -Panel) %>%
+  dplyr::distinct() %>%
   default_table()
 ```
 
 ### Balance Sheet
-
 ```{r}
 #| echo: false
 #| warning: false
@@ -97,6 +105,7 @@ tab_matching %>%
 tab_matching %>%
   dplyr::filter(Database == "Compustat", Panel == "Balance Sheet") %>%
   dplyr::select(-Database, -Panel) %>%
+  dplyr::distinct() %>%
   default_table()
 ```
 :::

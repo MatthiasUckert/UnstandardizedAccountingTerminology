@@ -18,9 +18,6 @@ website:
         href: 02-DatabaseMatching.qmd
       - text: "Name Matching Package"
         href: 03-NameMatching.qmd
-    right:
-      - icon: github
-        href: https://github.com/MatthiasUckert/UnstandardizedAccountingTerminology
         
   page-footer:
     center: "© 2025 | Supplementary materials for JAE submission"
