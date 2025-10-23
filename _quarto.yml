@@ -12,7 +12,7 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Dictionaries"
+      - text: "Terms & Concepts"
         href: 01-Dictionaries.qmd
       - text: "Textual Measures"
         href: 02-TextualMeasures.qmd
