@@ -50,4 +50,5 @@ rsconnect/
 # data-raw
 data-raw
 excel-raw
+_excel-raw
 _debug_data
