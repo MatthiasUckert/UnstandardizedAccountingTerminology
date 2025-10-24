@@ -61,6 +61,7 @@ tab_matching %>%
   dplyr::filter(Database == "Worldscope", Panel == "Income Statement") %>%
   dplyr::select(-Database, -Panel) %>%
   dplyr::distinct() %>%
+  dplyr::filter(!is.na(`XBRL\nTag(s)`)) %>%
   default_table()
 ```
 
@@ -74,6 +75,7 @@ tab_matching %>%
   dplyr::filter(Database == "Worldscope", Panel == "Balance Sheet") %>%
   dplyr::select(-Database, -Panel) %>%
   dplyr::distinct() %>%
+  dplyr::filter(!is.na(`XBRL\nTag(s)`)) %>%
   default_table()
 ```
 :::
@@ -93,6 +95,7 @@ tab_matching %>%
   dplyr::filter(Database == "Compustat", Panel == "Income Statement") %>%
   dplyr::select(-Database, -Panel) %>%
   dplyr::distinct() %>%
+  dplyr::filter(!is.na(`XBRL\nTag(s)`)) %>%
   default_table()
 ```
 
@@ -106,6 +109,7 @@ tab_matching %>%
   dplyr::filter(Database == "Compustat", Panel == "Balance Sheet") %>%
   dplyr::select(-Database, -Panel) %>%
   dplyr::distinct() %>%
+  dplyr::filter(!is.na(`XBRL\nTag(s)`)) %>%
   default_table()
 ```
 :::
